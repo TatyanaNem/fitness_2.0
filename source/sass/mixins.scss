@@ -1,5 +1,27 @@
+// Headings
+//-----------------------------------------
+@mixin heading ($fontFamily: $ff-primary, $fontWeight, $fontSize, $lineHeight: 1) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+// text
+//-------------------------------------------
+
+@mixin text($fontWeight: 400, $fontSize, $lineHeight) {
+  font-family: $ff-secondary;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+
 @mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     @content;
   }
 }
