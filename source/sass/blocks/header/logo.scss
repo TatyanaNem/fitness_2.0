@@ -7,6 +7,14 @@
   text-transform: uppercase;
   color: $color-default-light;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include vp-1199 {
     font-size: 24px;
     font-weight: 700;

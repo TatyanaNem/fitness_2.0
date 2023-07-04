@@ -15,6 +15,7 @@
 @import "global/utils";
 @import "global/container";
 @import "global/btn";
+@import "global/visually-hidden";
 
 // Blocks
 // ---------------------------------
@@ -22,6 +23,9 @@
 @import "blocks/header/header";
 @import "blocks/header/logo";
 @import "blocks/hero/hero";
+@import "blocks/footer/footer";
+@import "blocks/footer/navigation";
+@import "blocks/footer/social.scss";
 
 // ---------------------------------
 
