@@ -1,0 +1,183 @@
+.hero {
+  padding: 51px 0;
+  min-height: 658px;
+  background: $main-screen-gradient;
+
+  &__container {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__info {
+    width: 396px;
+    color: $color-default-light;
+    text-align: end;
+
+    &>p {
+      margin-top: 110px;
+      margin-bottom: 15px;
+      padding-right: 50px;
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.44px;
+    }
+  }
+
+  &__heading-wrapper {
+    position: relative;
+
+    & h1 {
+      position: relative;
+      margin-top: 0;
+      margin-left: auto;
+      margin-bottom: 0;
+      width: 298px;
+      font-family: $ff-primary;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 110px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__feature-list {
+    position: absolute;
+    bottom: 16%;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    & li {
+      font-family: $ff-secondary;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  &__buy-button {
+    display: inline-block;
+    margin-top: 49px;
+    padding: 20px 54px;
+    font-family: $ff-secondary;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 4px solid $color-default-light;
+  }
+
+  &__image {
+    width: 500px;
+    height: 556px;
+    background: url(../../../img/hero/hero.jpg);
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url(../../../img/hero/hero@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+@include vp-1199 {
+  .hero {
+    padding: 82px 0;
+    min-height: 554px;
+
+    &__container {
+      gap: 30px;
+    }
+
+    &__info {
+      width: calc(50% - 15px);
+
+      &>p {
+        margin-top: 48px;
+        margin-bottom: 8px;
+        padding-right: 4px;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 1.02px;
+      }
+    }
+
+    &__heading-wrapper {
+      & h1 {
+        font-size: 73px;
+        line-height: 86px;
+        letter-spacing: 3px;
+        text-transform: none;
+      }
+    }
+
+    &__feature-list {
+      bottom: 20px;
+      left: 0;
+    }
+
+    &__buy-button {
+      padding: 19px 30px;
+      margin-top: 38px;
+    }
+
+    &__image {
+      background: url(../../../img/hero/hero-tablet.jpg);
+      background-size: cover;
+      width: 324px;
+      height: 390px;
+
+      @media (min-resolution: $retina-dppx) {
+        background: url(../../../img/hero/hero-tablet@2x.jpg);
+        background-size: cover;
+        width: 324px;
+        height: 390px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    .hero {
+      padding: 60px 0;
+      min-height: 491px;
+      gap: 0;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &>p {
+          padding-right: 3px;
+          margin-bottom: 13px;
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+
+      &__heading-wrapper {
+        & h1 {
+          padding-right: 8px;
+        }
+      }
+
+      &__feature-list {
+        bottom: 31px;
+      }
+
+      &__buy-button {
+        margin-top: 25px;
+      }
+
+      &__image {
+        display: none;
+      }
+    }
+  }
+}

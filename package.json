@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
-  "version": "2.0.0",
+  "name": "Fitness 2,0",
+  "version": "1.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Лендинг фитнес центра Supergym",
   "browserslist": [
     "last 3 versions",
     "IE 11",
