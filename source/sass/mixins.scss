@@ -41,7 +41,7 @@
 // Desktop first
 
 @mixin vp-1199 {
-  @media (max-device-width: ($vp-1200)) {
+  @media (max-device-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
