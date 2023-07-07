@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Modules
   // ---------------------------------
+  // блок GYM
+
   const video = document.querySelector(".gym__video");
   const playIcon = video.querySelector(".video__play");
   video.addEventListener("click", function () {
@@ -21,6 +23,39 @@ window.addEventListener("DOMContentLoaded", () => {
     );
     playIcon.classList.add("visually-hidden");
   });
+
+  // блок TABS
+
+  const tabsControls = document.querySelectorAll(".tabs__control");
+  const tabsElementsList = document.querySelectorAll(".tabs__elements-list");
+
+  tabsControls.forEach((item) =>
+    item.addEventListener("click", function (event) {
+      const tabsControlTarget = event.target.getAttribute("data-tab");
+      tabsControls.forEach((element) => element.classList.remove("is-active"));
+      tabsElementsList.forEach((element) =>
+        element.classList.add("tabs__elements-list--hidden")
+      );
+      item.classList.add("is-active");
+      document
+        .getElementById(tabsControlTarget)
+        .classList.remove("tabs__elements-list--hidden");
+    })
+  );
+
+  // Блок MEMBERSHIP
+
+  const membershipsElements = document.querySelectorAll(".membership");
+
+  membershipsElements.forEach((item) =>
+    item.addEventListener("click", function (event) {
+      const membershipTarget = event.target.getAttribute("data-membership");
+      membershipsElements.forEach((element) =>
+        element.classList.remove("is-active")
+      );
+      item.classList.add("is-active");
+    })
+  );
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -5,7 +5,6 @@
   min-height: 756px;
 
   &__info {
-    width: 355px;
     margin-right: 22px;
     color: $color-default-dark;
 
@@ -28,6 +27,7 @@
     }
 
     & p {
+      width: 355px;
       margin-top: 0;
       margin-bottom: 8px;
       font-size: 16px;
@@ -41,6 +41,11 @@
     position: relative;
     padding-left: 63px;
     object-fit: cover;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__video {
@@ -72,7 +77,8 @@
   .gym {
     flex-direction: column;
     align-items: center;
-    padding: 100px 45px 183px;
+    padding: 100px 45px 80px;
+    margin-bottom: 99px;
     text-align: center;
 
     &__info {
@@ -93,8 +99,8 @@
       }
 
       & p {
-        margin-bottom: 44px;
-        padding: 0 65px;
+        width: 502px;
+        margin: 0 auto 43px;
 
         +p {
           display: none;
@@ -103,6 +109,8 @@
     }
 
     &__image {
+      width: 100%;
+      height: auto;
       padding-left: 0;
     }
 
@@ -118,7 +126,7 @@
 
 @include vp-767 {
   .gym {
-    padding: 56px 0;
+    padding: 56px 0 70px;
     text-align: start;
 
     &__info {
@@ -135,6 +143,7 @@
       }
 
       & p {
+        width: 100%;
         margin-bottom: 33px;
         padding-left: 0;
         padding-right: 32px;
@@ -143,6 +152,8 @@
 
     &__image {
       & img {
+        width: 100%;
+        height: auto;
         margin-bottom: 40px;
       }
     }

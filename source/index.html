@@ -61,7 +61,7 @@
         </div>
         <div class="gym__image">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/gym/gym-mobile.webp 1x,
+            <source type="image/webp" media="(max-width: 320px)" srcset="img/gym/gym-mobile.webp 1x,
                               img/gym/gym-mobile@2x.webp 2x" />
             <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym/gym-tablet.webp 1x,
                               img/gym/gym-tablet@2x.webp 2x" />
@@ -73,7 +73,7 @@
                                           img/gym/gym-tablet@2x.png 2x">
             <source type="image/png" srcset="img/gym/gym.png 1x,
                                                       img/gym/gym@2x.png 2x">
-            <img srcset="img/gym.png 1x img/gym@2x.png 2x,
+            <img width="660" height="401" srcset="img/gym.png 1x img/gym@2x.png 2x,
                     img/gym-tablet.jpg 768w,
                     img/gym-mobile.jpg 350w" src="img/gym/gym.png" alt="Изображение тренажерного зала">
           </picture>
@@ -83,6 +83,100 @@
                 <use xlink:href="img/sprite.svg#Play"></use>
               </svg>
             </span>
+          </div>
+        </div>
+      </section>
+      <section class="memberships" id="memberships">
+        <div class="container">
+          <h2>Абонементы</h2>
+          <div class="tabs">
+            <div class="tabs__controls">
+              <button class="tabs__control is-active" data-tab="1-month">1 месяц</button>
+              <button class="tabs__control" data-tab="6-months">6 месяцев</button>
+              <button class="tabs__control" data-tab="12-months">12 месяцев</button>
+            </div>
+            <div class="tabs__content">
+              <ul class="tabs__elements-list" id="1-month">
+                <li class="tabs__element membership" data-membership="coach">
+                  <div class="membership__wrapper">
+                    <h4 class="membership__title">С тренером</h4>
+                    <p class="membership__description">
+                      12 занятий
+                    </p>
+                    <div class="membership__price" data-price="5000">5000<span>₽</span></div>
+                  </div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership is-active" data-membership="day">
+                  <h4 class="membership__title">Дневной</h4>
+                  <p class="membership__description">
+                    с 8:00 до 17:00
+                  </p>
+                  <div class="membership__price" data-price="1700">1700<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership" data-membership="full">
+                  <h4 class="membership__title">Полный день</h4>
+                  <p class="membership__description">
+                    с 8:00 до 22:00
+                  </p>
+                  <div class="membership__price" data-price="2700">2700<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="tabs__elements-list tabs__elements-list--hidden" id="6-months">
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">С тренером</h4>
+                  <p class="membership__description">
+                    12 занятий
+                  </p>
+                  <div class="membership__price" data-price="25000">25000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">Дневной</h4>
+                  <p class="membership__description">
+                    с 8:00 до 17:00
+                  </p>
+                  <div class="membership__price" data-price="12000">15000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">Полный день</h4>
+                  <p class="membership__description">
+                    с 8:00 до 22:00
+                  </p>
+                  <div class="membership__price" data-price="15000">15000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="tabs__elements-list tabs__elements-list--hidden" id="12-months">
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">С тренером</h4>
+                  <p class="membership__description">
+                    12 занятий
+                  </p>
+                  <div class="membership__price" data-price="50000">50000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">Дневной</h4>
+                  <p class="membership__description">
+                    с 8:00 до 17:00
+                  </p>
+                  <div class="membership__price" data-price="21000">21000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+                <li class="tabs__element membership">
+                  <h4 class="membership__title">Полный день</h4>
+                  <p class="membership__description">
+                    с 8:00 до 22:00
+                  </p>
+                  <div class="membership__price" data-price="">28000<span>₽</span></div>
+                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
