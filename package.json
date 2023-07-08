@@ -52,6 +52,7 @@
     "imagemin-pngquant": "9.0.2",
     "imagemin-svgo": "10.0.1",
     "postcss-scss": "4.0.6",
+    "prettier": "3.0.0",
     "sass": "1.53.0",
     "stylelint": "^14.16.1",
     "stylelint-config-htmlacademy": "1.1.4",
