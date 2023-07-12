@@ -1,5 +1,5 @@
 .features {
-  padding: 38px 0 130px;
+  padding: 66px 0 114px;
   background-color: $background-additional;
   min-height: 664px;
 
@@ -124,6 +124,7 @@
 @include vp-767 {
   .features {
     padding-top: 31px;
+    padding-bottom: 63px;
     min-height: 538px;
 
     & h2 {
