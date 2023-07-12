@@ -16,6 +16,8 @@
 @import "global/container";
 @import "global/btn";
 @import "global/visually-hidden";
+@import "global/data-tabs.scss";
+@import "global/data-accordion.scss";
 
 // Blocks
 // ---------------------------------
@@ -26,7 +28,7 @@
 @import "blocks/gym/gym";
 @import "blocks/gym/video";
 @import "blocks/memberships/memberships";
-@import "blocks/memberships/tabs";
+// @import "blocks/memberships/tabs";
 @import "blocks/memberships/membership";
 @import "blocks/super-games/super-games";
 @import "blocks/coaches/coaches";
@@ -34,6 +36,7 @@
 @import "blocks/features/features";
 @import "blocks/features/feature";
 @import "blocks/promotions/promotions";
+@import "blocks/FAQ/FAQ";
 @import "blocks/footer/footer";
 @import "blocks/footer/navigation";
 @import "blocks/footer/social";

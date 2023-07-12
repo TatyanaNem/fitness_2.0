@@ -1,0 +1,53 @@
+.FAQ {
+  padding: 120px 0;
+  background-color: $background-additional;
+
+  h2 {
+    margin-bottom: 39px;
+    font-family: $ff-primary;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.62px;
+    color: $color-default-dark;
+  }
+
+  &__tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    width: 260px;
+    gap: 10px;
+  }
+
+  &__control {
+    padding: 18px 0;
+    font-family: $ff-secondary;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    color: $color-default-dark;
+    border: 1px solid rgba(16, 38, 84, 0.20);
+    background-color: transparent;
+    cursor: pointer;
+
+    &.is-active {
+      border-color: transparent;
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      color: $color-default-light;
+    }
+  }
+
+  &__content {
+    width: calc(100% - 300px);
+  }
+
+  &__element {
+    width: 100%;
+  }
+}
