@@ -136,7 +136,7 @@
 
 @include vp-1199 {
   .promotions {
-    padding: 105px 0;
+    padding: 105px 0 100px;
 
     & h2 {
       margin-top: 0;
@@ -175,10 +175,6 @@
           background-repeat: no-repeat;
         }
       }
-    }
-
-    &__link {
-      align-self: center;
     }
   }
 }
@@ -219,7 +215,7 @@
 
       &--big {
         padding: 41px;
-        width: 290px;
+        max-width: 290px;
         min-height: 598px;
         background-image: url(../../../img/promo/promo__mobile.jpg);
         background-size: 100% 299px;

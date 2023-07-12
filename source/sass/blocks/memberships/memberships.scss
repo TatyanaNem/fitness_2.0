@@ -72,6 +72,7 @@
 
   &__elements-list {
     display: flex;
+    margin: 0;
     padding: 0;
     width: 100%;
     gap: 40px;
@@ -91,7 +92,7 @@
     }
 
     &__controls {
-      margin-bottom: 28px;
+      margin-bottom: 44px;
     }
 
     &__control {

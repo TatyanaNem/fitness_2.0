@@ -1,0 +1,74 @@
+.accordion {
+  &__element {
+    position: relative;
+    font-family: $ff-secondary;
+    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+    color: $color-default-dark;
+
+    &:first-child {
+      border-top: 1px solid rgba(28, 51, 116, 0.20);
+    }
+
+    &.is-active>.accordion__button::after {
+      background-image: url(../../../img/svg/minus.svg);
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 32px 62px 32px 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      background-image: url(../../../img/svg/plus.svg);
+      background-size: 42px 42px;
+    }
+
+    & p {
+      margin: 0;
+      max-width: calc(100% - 52px);
+    }
+  }
+
+  &__content p {
+    padding-bottom: 25px;
+    margin: 0;
+    max-width: 660px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
+
+@include vp-767 {
+  .accordion {
+    &__button {
+      padding: 20px 52px 20px 0;
+      font-size: 18px;
+
+      &::after {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+      }
+    }
+
+    &__content p {
+      font-size: 16px;
+    }
+  }
+}

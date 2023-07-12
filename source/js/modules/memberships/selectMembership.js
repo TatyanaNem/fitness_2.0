@@ -11,4 +11,4 @@ function selectMembership() {
   )
 }
 
-export { selectMembership }
+export { selectMembership };
