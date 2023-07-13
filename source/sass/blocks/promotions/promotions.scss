@@ -1,5 +1,5 @@
 .promotions {
-  padding: 100px 0;
+  padding: 100px 0 120px;
   background-color: $color-default-light;
 
   & h2 {
@@ -237,6 +237,10 @@
           margin-bottom: 27px;
         }
       }
+    }
+
+    &__link {
+      align-self: center;
     }
   }
 }

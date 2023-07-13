@@ -1,5 +1,5 @@
 .super-games {
-  padding-top: 104px;
+  padding-top: 120px;
   padding-bottom: 106px;
   width: 100%;
 
@@ -228,7 +228,7 @@
 @include vp-767 {
   .super-games {
     padding-top: 70px;
-    padding-bottom: 41px;
+    padding-bottom: 49px;
 
     &__container {
       flex-direction: column;

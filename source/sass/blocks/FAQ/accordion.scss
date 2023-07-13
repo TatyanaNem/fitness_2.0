@@ -9,14 +9,23 @@
       border-top: 1px solid rgba(28, 51, 116, 0.20);
     }
 
+    &.is-active {
+      padding-bottom: 25px;
+    }
+
+    &.is-active>.accordion__button {
+      padding-bottom: 14px;
+    }
+
     &.is-active>.accordion__button::after {
+      top: 61%;
       background-image: url(../../../img/svg/minus.svg);
     }
   }
 
   &__button {
     position: relative;
-    padding: 32px 62px 32px 0;
+    padding: 32px 62px 30px 0;
     width: 100%;
     font-size: 24px;
     font-weight: 500;
@@ -37,15 +46,10 @@
       background-image: url(../../../img/svg/plus.svg);
       background-size: 42px 42px;
     }
-
-    & p {
-      margin: 0;
-      max-width: calc(100% - 52px);
-    }
   }
 
   &__content p {
-    padding-bottom: 25px;
+    max-width: 660px;
     margin: 0;
     max-width: 660px;
     font-size: 18px;
@@ -54,11 +58,34 @@
   }
 }
 
+@include vp-1199 {
+  .accordion {
+    &__button {
+      line-height: 1.13;
+    }
+
+    &__content p {
+      max-width: 560px;
+    }
+  }
+}
+
 @include vp-767 {
   .accordion {
+    &__element {
+      &.is-active {
+        padding-bottom: 21px;
+      }
+
+      &.is-active>.accordion__button::after {
+        top: 53%;
+      }
+    }
+
     &__button {
       padding: 20px 52px 20px 0;
       font-size: 18px;
+      line-height: 1.17;
 
       &::after {
         width: 32px;
