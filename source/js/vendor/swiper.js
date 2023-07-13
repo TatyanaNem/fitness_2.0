@@ -1,5 +1,5 @@
-// init Swiper:
-new Swiper(".swiper", {
+// Swiper for Coaches
+new Swiper(".swiper-coaches", {
   direction: "horizontal",
   loop: true,
   breakpoints: {
@@ -16,10 +16,20 @@ new Swiper(".swiper", {
       spaceBetween: 40,
     },
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next--coaches",
+    prevEl: ".swiper-button-prev--coaches",
+  },
+});
+
+
+// Swiper for Testimonials
+new Swiper(".testimonials__swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  loop: false,
+  navigation: {
+    nextEl: ".testimonials__swiper-button--next",
+    prevEl: ".testimonials__swiper-button--prev",
   },
 });

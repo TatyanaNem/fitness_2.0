@@ -227,7 +227,7 @@
         <div class="coaches__container">
           <h2>Тренеры</h2>
           <div class="coaches__swiper-container">
-            <div class="coaches__swiper swiper">
+            <div class="coaches__swiper swiper-coaches">
               <ul class="coaches__swiper-wrapper swiper-wrapper">
                 <li class="coaches__swiper-slide swiper-slide coach" tabindex="-1" data-coach="1">
                   <picture>
@@ -375,8 +375,8 @@
                 </li>
               </ul>
             </div>
-            <div class="coaches__swiper-button swiper-button-prev"></div>
-            <div class="coaches__swiper-button swiper-button-next"></div>
+            <div class="coaches__swiper-button swiper-button-next swiper-button-next--coaches"></div>
+            <div class="coaches__swiper-button swiper-button-prev swiper-button-prev--coaches"></div>
           </div>
         </div>
       </section>
@@ -662,6 +662,55 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="testimonials__swiper-container">
+            <div class="testimonials__swiper">
+              <ul class="testimonials__list swiper-wrapper">
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/testimonials/AnnaOrlova.webp 1x,
+                                                      img/testimonials/AnnaOrlova@2x.webp 2x" />
+                      <img width="80" height="80"
+                        srcset="img/testimonials/AnnaOrlova.png 1x img/testimonials/AnnaOrlova@2x.png 2x"
+                        src="img.coaches/AnnaOrlova.jpg" alt="фото Анны Орловой">
+                    </picture>
+                  </div>
+                  <h3>Анна Орлова</h3>
+                  <blockquote>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры
+                    обновляют,
+                    персонал дружелюбный. Зал&nbsp;просторный, даже в вечернее время нет очередей»</blockquote>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__image">
+                    <img src="#" alt="Дмитрий Песков">
+                  </div>
+                  <h3>Константин Константинов</h3>
+                  <blockquote>«Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illo excepturi assumenda
+                    optio soluta tempora nostrum doloribus ratione dolorum.»</blockquote>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/testimonials/sergey_shnurov.webp" />
+                      <img width="80" height="80" srcset="img/testimonials/sergey_shnurov.jpg"
+                        src="img.coaches/sergey_shnurov.jpg" alt="фото Сергея Шнурова">
+                    </picture>
+                  </div>
+                  <h3>Сергей Шнуров</h3>
+                  <blockquote>«Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus debitis at,
+                    nemo omnis, tempora atque tempore iste doloremque corrupti»</blockquote>
+                </li>
+              </ul>
+            </div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--next swiper-button-next"></div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--prev swiper-button-prev"></div>
+          </div>
+
         </div>
       </section>
     </main>

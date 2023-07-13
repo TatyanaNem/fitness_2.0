@@ -1,0 +1,201 @@
+.testimonials {
+  padding: 97px 0;
+  background-color: #ffffff;
+
+  @include vp-1199 {
+    padding: 70px 0 77px;
+  }
+
+  @include vp-1199 {
+    padding: 69px 0 77px;
+  }
+
+  & h2 {
+    padding-left: 10px;
+    margin-bottom: 56px;
+    font-family: $ff-primary;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.62px;
+    color: $color-default-dark;
+    text-align: center;
+
+    @include vp-1199 {
+      margin-bottom: 53px;
+      padding-left: 0;
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include vp-767 {
+      margin-top: 0;
+      margin-bottom: 49px;
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
+  }
+
+  &__swiper-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 672px;
+
+    @include vp-1199 {
+      width: 100%;
+    }
+  }
+
+  &__swiper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 560px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: $color-default-light;
+
+    @include vp-1199 {
+      width: 566px;
+    }
+
+    @include vp-767 {
+      width: 226px;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: min-content min-content;
+    gap: 0 28px;
+    padding: 54px 62px 57px;
+    font-family: $ff-secondary;
+    background-color: #1C3374;
+
+    @include vp-1199 {
+      padding: 54px 65px 57px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      gap: 0 15px;
+      padding: 40px 15px 34px;
+    }
+
+    & h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      @include vp-767 {
+        margin-top: 8px;
+        margin-bottom: 0;
+        justify-self: center;
+        line-height: 1.3;
+      }
+    }
+
+    & blockquote {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.4;
+
+      @include vp-767 {
+        grid-column: 1 / -1;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    grid-row: 1 / -1;
+    width: 80px;
+    height: auto;
+    margin-top: 9px;
+    border-radius: 50%;
+
+    @include vp-1199 {
+      margin-top: 8px;
+    }
+
+    @include vp-767 {
+      justify-self: end;
+      max-width: 68px;
+      max-height: 68px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    & img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+
+      @include vp-767 {
+        width: 68px;
+        height: 68px;
+      }
+    }
+
+    & img::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+      background-image: url(../../../img/testimonials/image-placeholder.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 50%;
+
+      @include vp-767 {
+        width: 68px;
+        height: 68px;
+      }
+    }
+  }
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    top: 46%;
+
+    @include vp-767 {
+      top: 50%;
+    }
+  }
+
+  & .swiper-button-prev {
+    left: -6px;
+  }
+
+  & .swiper-button-next {
+    right: -6px;
+  }
+
+  & .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 32px;
+    font-weight: 400;
+    color: #AFAFAF;
+    opacity: 0.7;
+
+    @include vp-767 {
+      font-size: 22px;
+    }
+  }
+}
