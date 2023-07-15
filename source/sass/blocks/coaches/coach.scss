@@ -23,7 +23,7 @@
     object-fit: cover;
   }
 
-  & h4 {
+  & h3 {
     position: absolute;
     width: 100%;
     bottom: 22px;
@@ -38,8 +38,8 @@
     z-index: 20;
   }
 
-  &:hover h4,
-  &:focus h4 {
+  &:hover h3,
+  &:focus h3 {
     bottom: 73%;
     transition: .5s all ease-in-out;
   }
@@ -96,8 +96,8 @@
   .coach {
     width: 226px;
 
-    &:hover h4,
-    &:focus h4 {
+    &:hover h3,
+    &:focus h3 {
       margin-bottom: 0;
       bottom: 77%;
     }
