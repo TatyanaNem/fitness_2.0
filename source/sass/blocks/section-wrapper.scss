@@ -1,0 +1,27 @@
+.section-wrapper {
+  padding: 62px 0 68px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #74819C;
+  background: linear-gradient(90deg, rgba(16, 38, 84, 1) 50%, rgba(255, 255, 255, 1) 50%);
+
+  @include vp-1199 {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border-top: none;
+  }
+
+  &__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include vp-1199 {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+}

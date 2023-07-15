@@ -84,8 +84,11 @@
 
     &__button {
       padding: 20px 52px 20px 0;
+      font-family: $ff-secondary;
+      font-weight: 500;
       font-size: 18px;
       line-height: 1.17;
+      color: $color-default-dark;
 
       &::after {
         width: 32px;

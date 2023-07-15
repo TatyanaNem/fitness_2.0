@@ -1,18 +1,19 @@
 .testimonials {
-  padding: 97px 0;
+  padding: 108px 0 120px;
   background-color: #ffffff;
 
   @include vp-1199 {
-    padding: 70px 0 77px;
+    padding: 70px 0 99px;
   }
 
-  @include vp-1199 {
-    padding: 69px 0 77px;
+  @include vp-767 {
+    padding: 69px 0;
   }
 
   & h2 {
     padding-left: 10px;
-    margin-bottom: 56px;
+    margin-top: 33px;
+    margin-bottom: 57px;
     font-family: $ff-primary;
     font-size: 54px;
     font-weight: 600;
@@ -21,6 +22,7 @@
     text-align: center;
 
     @include vp-1199 {
+      margin-top: 35px;
       margin-bottom: 53px;
       padding-left: 0;
       font-size: 42px;
@@ -38,10 +40,10 @@
   &__swiper-container {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     width: 672px;
+    height: 100%;
 
     @include vp-1199 {
       width: 100%;
@@ -158,7 +160,7 @@
       top: 0;
       left: 0;
       background-image: url(../../../img/testimonials/image-placeholder.jpg);
-      background-size: cover;
+      background-size: 321px 384px;
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;
@@ -167,15 +169,6 @@
         width: 68px;
         height: 68px;
       }
-    }
-  }
-
-  & .swiper-button-prev,
-  & .swiper-button-next {
-    top: 46%;
-
-    @include vp-767 {
-      top: 50%;
     }
   }
 

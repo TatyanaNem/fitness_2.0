@@ -136,6 +136,7 @@
     }
 
     &__list {
+      width: 100%;
       padding: 0;
       grid-template-columns: 1fr;
       grid-template-rows: min-content;
@@ -156,7 +157,7 @@
 
     &__item {
       &--center {
-        width: auto;
+        width: 100%;
         grid-row: 3 / 4;
         padding: 50px;
       }

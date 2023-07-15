@@ -1,7 +1,36 @@
 .memberships {
+  position: relative;
   background-color: $background-additional;
   min-height: 851px;
   padding: 120px 0 120px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 321px;
+    height: 384px;
+    bottom: -93px;
+    right: -31px;
+    transform: rotate(150deg);
+    background-image: url(../../../img/disks.png);
+    background-size: 321px 384px;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @include vp-1199 {
+      background-image: url(../../../img/disks__tablet.png);
+      background-size: 289px 345px;
+      bottom: -86px;
+      right: 0;
+    }
+
+    @include vp-767 {
+      &::after {
+        display: none;
+      }
+    }
+  }
 
   & h2 {
     margin-top: 0;
@@ -16,9 +45,11 @@
   }
 
   &__tabs {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 200;
   }
 
   &__controls {
@@ -72,6 +103,8 @@
 
   &__elements-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
     width: 100%;
