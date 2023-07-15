@@ -25,10 +25,8 @@
       top: -298px;
       right: 0;
     }
-  }
 
-  @include vp-767 {
-    &::after {
+    @include vp-767 {
       display: none;
     }
   }

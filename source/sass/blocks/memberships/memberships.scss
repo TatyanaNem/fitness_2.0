@@ -7,6 +7,7 @@
 
   &::after {
     content: "";
+    display: block;
     position: absolute;
     width: 321px;
     height: 384px;
@@ -26,9 +27,7 @@
     }
 
     @include vp-767 {
-      &::after {
-        display: none;
-      }
+      display: none;
     }
   }
 

@@ -42,18 +42,20 @@
   }
 
   &__form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 410px;
+    & form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 410px;
 
-    @include vp-1199 {
-      margin: 0;
-      width: 100%;
-    }
+      @include vp-1199 {
+        margin: 0;
+        width: 100%;
+      }
 
-    & button {
-      flex-basis: 100%;
+      & button {
+        flex-basis: 100%;
+      }
     }
   }
 }
