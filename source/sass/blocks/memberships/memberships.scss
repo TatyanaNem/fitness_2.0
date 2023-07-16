@@ -5,6 +5,14 @@
   padding: 120px 0 120px;
   overflow: hidden;
 
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 63px 0 69px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -41,6 +49,22 @@
     letter-spacing: 1.62px;
     color: $color-default-dark;
     text-align: center;
+
+    @include vp-1199 {
+      padding-right: 13px;
+      margin-bottom: 3px;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 1.26px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 2px;
+      padding-right: 10px;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.96px;
+    }
   }
 
   &__tabs {
@@ -55,6 +79,16 @@
     position: relative;
     display: flex;
     margin-bottom: 38px;
+
+    @include vp-1199 {
+      margin-bottom: 44px;
+    }
+
+    @include vp-767 {
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 35px;
+    }
 
     &::before {
       content: "";
@@ -79,6 +113,18 @@
     background-color: transparent;
     cursor: pointer;
     opacity: 0.5;
+
+    @include vp-1199 {
+      margin-right: 54px;
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      padding-top: 19px;
+      padding-bottom: 13px;
+      margin-right: 45px;
+      font-size: 16px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -108,63 +154,13 @@
     padding: 0;
     width: 100%;
     gap: 40px;
-  }
-}
 
-@include vp-1199 {
-  .memberships {
-    padding: 100px 0;
-
-    & h2 {
-      padding-right: 13px;
-      margin-bottom: 3px;
-      font-size: 42px;
-      line-height: 50px;
-      letter-spacing: 1.26px;
-    }
-
-    &__controls {
-      margin-bottom: 44px;
-    }
-
-    &__control {
-      margin-right: 54px;
-      font-size: 18px;
-    }
-
-    &__elements-list {
+    @include vp-1199 {
       flex-direction: column;
       align-items: center;
     }
-  }
-}
 
-@include vp-767 {
-  .memberships {
-    padding: 63px 0 69px;
-
-    & h2 {
-      margin-bottom: 2px;
-      padding-right: 10px;
-      font-size: 32px;
-      line-height: 38px;
-      letter-spacing: 0.96px;
-    }
-
-    &__controls {
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 35px;
-    }
-
-    &__control {
-      padding-top: 19px;
-      padding-bottom: 13px;
-      margin-right: 45px;
-      font-size: 16px;
-    }
-
-    &__elements-list {
+    @include vp-767 {
       gap: 35px;
     }
   }

@@ -6,6 +6,15 @@
   background-color: #afafaf;
   cursor: pointer;
 
+  @include vp-1199 {
+    width: 226px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+
   & .is-active~.coach-info {
     opacity: 0.89;
   }
@@ -42,6 +51,11 @@
   &:focus h3 {
     bottom: 73%;
     transition: .5s all ease-in-out;
+
+    @include vp-767 {
+      margin-bottom: 0;
+      bottom: 75%;
+    }
   }
 
   &__info {
@@ -58,6 +72,10 @@
     background-color: $color-default-dark;
     opacity: 0;
     text-align: center;
+
+    @include vp-767 {
+      padding-top: 48px;
+    }
 
     & p {
       margin-bottom: 34px;
@@ -79,35 +97,13 @@
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
+
+    @include vp-767 {
+      padding-left: 30px;
+    }
   }
 
   &__features-item:not(:last-child) {
     margin-bottom: 13px;
-  }
-}
-
-@include vp-1199 {
-  .coach {
-    width: 268px;
-  }
-}
-
-@include vp-767 {
-  .coach {
-    width: 226px;
-
-    &:hover h3,
-    &:focus h3 {
-      margin-bottom: 0;
-      bottom: 77%;
-    }
-
-    &__info {
-      padding-top: 48px;
-    }
-
-    &__features-list {
-      padding-left: 30px;
-    }
   }
 }

@@ -5,6 +5,16 @@
   width: 100%;
   overflow: hidden;
 
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 92px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 49px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -33,6 +43,10 @@
 
   &__container {
     display: flex;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -42,6 +56,16 @@
     background-color: #ed0233;
     color: $color-default-light;
 
+    @include vp-1199 {
+      padding: 51px 45px;
+      width: 292px;
+      min-height: 292px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+
     & p {
       margin-top: 0;
       margin-bottom: 44px;
@@ -49,6 +73,14 @@
       font-family: $ff-secondary;
       font-weight: 400;
       line-height: 1.5;
+
+      @include vp-1199 {
+        margin-bottom: 31px;
+        font-size: 12px;
+        font-family: $ff-secondary;
+        font-weight: 400;
+        line-height: 14px;
+      }
     }
   }
 
@@ -59,6 +91,11 @@
     justify-self: start;
     gap: 11px 50px;
     margin-bottom: 20px;
+
+    @include vp-1199 {
+      gap: 2px 29px;
+      margin-bottom: 14px;
+    }
 
     & h2 {
       width: 201px;
@@ -71,12 +108,26 @@
       line-height: 1;
       letter-spacing: 2.46px;
       text-align: center;
+
+      @include vp-1199 {
+        width: 117px;
+        font-size: 48px;
+        line-height: 0.95;
+        letter-spacing: 1.44px;
+      }
     }
 
     & .super-games__date {
       display: flex;
       flex-direction: column;
       gap: 5px;
+
+      @include vp-1199 {
+        font-family: $ff-secondary;
+        font-size: 12px;
+        line-height: 1.2;
+        gap: 3px;
+      }
 
       & p {
         display: grid;
@@ -88,9 +139,18 @@
         margin-bottom: 0;
         border-top: 1px solid $color-default-light;
 
+        @include vp-1199 {
+          gap: 0 3px;
+        }
+
         & span:last-child {
           font-size: 14px;
           line-height: 1.7;
+
+          @include vp-1199 {
+            font-size: 10px;
+            line-height: 12px;
+          }
         }
       }
 
@@ -99,6 +159,12 @@
         font-family: $ff-secondary;
         font-weight: 700;
         line-height: 1.3;
+
+        @include vp-1199 {
+          padding-top: 0;
+          font-size: 24px;
+          line-height: 1;
+        }
       }
     }
 
@@ -111,6 +177,12 @@
         font-size: 18px;
         font-family: $ff-secondary;
         font-weight: 400;
+
+        @include vp-1199 {
+          margin-bottom: 0;
+          font-size: 12px;
+          line-height: 1.5;
+        }
       }
 
       & .super-games__number {
@@ -120,6 +192,12 @@
         font-weight: 700;
         line-height: 1;
         border-top: 1px solid $color-default-light;
+
+        @include vp-1199 {
+          padding-top: 0;
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
     }
   }
@@ -136,6 +214,14 @@
     border: 4px solid $color-default-light;
     color: inherit;
     text-align: center;
+
+    @include vp-1199 {
+      padding: 19px;
+      font-size: 10px;
+      line-height: 0.5px;
+      border-width: 2px;
+      letter-spacing: 0.5px;
+    }
   }
 
   &__image {
@@ -156,84 +242,8 @@
       background-repeat: no-repeat;
       object-fit: cover;
     }
-  }
-}
 
-@include vp-1199 {
-  .super-games {
-    padding-top: 100px;
-    padding-bottom: 92px;
-
-    &__info {
-      padding: 51px 45px;
-      width: 292px;
-      min-height: 292px;
-
-      & p {
-        margin-bottom: 31px;
-        font-size: 12px;
-        font-family: $ff-secondary;
-        font-weight: 400;
-        line-height: 14px;
-      }
-    }
-
-    &__info-wrapper {
-      gap: 2px 29px;
-      margin-bottom: 10px;
-
-      & h2 {
-        width: 117px;
-        font-size: 48px;
-        line-height: 0.95;
-        letter-spacing: 1.44px;
-      }
-
-      & .super-games__date {
-        font-family: $ff-secondary;
-        font-size: 12px;
-        line-height: 1.2;
-        gap: 3px;
-
-        & p {
-          gap: 0 3px;
-
-          & span:last-child {
-            font-size: 10px;
-            line-height: 12px;
-          }
-        }
-
-        & .super-games__number {
-          font-size: 24px;
-          line-height: 28px;
-        }
-      }
-
-      & .super-games__time {
-        & span {
-          margin-bottom: 0;
-          font-size: 12px;
-          line-height: 1.5;
-        }
-
-        & .super-games__number {
-          padding-top: 0;
-          font-size: 24px;
-          line-height: 28px;
-        }
-      }
-    }
-
-    &__link {
-      padding: 19px;
-      font-size: 10px;
-      line-height: 0.5px;
-      border-width: 2px;
-      letter-spacing: 0.5px;
-    }
-
-    &__image {
+    @include vp-1199 {
       width: calc(100% - 292px);
       height: auto;
       background: url(../../../img/super-games/super-games_tablet.png);
@@ -250,23 +260,8 @@
         background-repeat: no-repeat;
       }
     }
-  }
-}
 
-@include vp-767 {
-  .super-games {
-    padding-top: 70px;
-    padding-bottom: 49px;
-
-    &__container {
-      flex-direction: column;
-    }
-
-    &__info {
-      width: 100%;
-    }
-
-    &__image {
+    @include vp-767 {
       width: 100%;
       height: 292px;
       background: url(../../../img/super-games/super-games_mobile.png);
