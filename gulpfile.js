@@ -1,3 +1,5 @@
+import ghPages from "gulp-gh-pages";
+import path from "path";
 import gulp from "gulp";
 import browserSync from "browser-sync";
 import del from "del";
@@ -15,6 +17,12 @@ import {
   optimizePng,
   optimizeJpg,
 } from "./gulp/optimizeImages.mjs";
+
+const deploy = () =>
+  gulp.src('build/*/**', {
+    base: 'build',
+  })
+      .pipe(ghPages());
 
 const server = browserSync.create();
 const streamStyles = () => compileStyles().pipe(server.stream());
@@ -90,4 +98,4 @@ const start = gulp.series(
   syncServer
 );
 
-export { createWebp as webp, build, start, dev };
+export { createWebp as webp, build, start, dev, deploy };
