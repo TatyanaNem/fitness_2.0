@@ -902,7 +902,7 @@ button,
 .hero__image {
   width: 500px;
   height: 556px;
-  background: url("../../../img/hero/hero.jpg");
+  background: url("./../img/hero/hero.jpg");
   background-size: cover;
 }
 
@@ -968,7 +968,7 @@ button,
   left: 0;
   width: 364px;
   height: 228px;
-  background: url("../../../img/gym/image-video.png");
+  background: url("./../img/gym/image-video.png");
   background-size: cover;
   -webkit-box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.5);
   box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.5);
@@ -1017,7 +1017,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../../../img/svg/circle-play.svg");
+  background: url("./../img/svg/circle-play.svg");
 }
 
 .video__play::after {
@@ -1065,7 +1065,7 @@ button,
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
-  background-image: url("../../../img/disks.png");
+  background-image: url("./../img/disks.png");
   background-size: 321px 384px;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1302,7 +1302,7 @@ button,
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
-  background-image: url("../../img/disks.png");
+  background-image: url("./../img/disks.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1442,7 +1442,7 @@ button,
 .super-games__image {
   width: calc(100% - 500px);
   height: auto;
-  background: #102654 url("../../../img/super-games/super-games.png");
+  background: #102654 url("./../img/super-games/super-games.png");
   background-color: #102654;
   background-size: cover;
   background-position: center center;
@@ -1872,7 +1872,7 @@ button,
   width: 100%;
   min-height: 462px;
   background-color: #ed0233;
-  background-image: url("../../../img/promo/promo.jpg");
+  background-image: url("./../img/promo/promo.jpg");
   background-size: 50% 100%;
   background-position: right center;
   background-repeat: no-repeat;
@@ -2156,7 +2156,7 @@ button,
   height: 80px;
   top: 0;
   left: 0;
-  background-image: url("../../../img/testimonials/image-placeholder.jpg");
+  background-image: url("./../img/testimonials/image-placeholder.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2749,7 +2749,7 @@ button,
   }
 
   .hero__image {
-    background: url("../../../img/hero/hero-tablet.jpg");
+    background: url("./../img/hero/hero-tablet.jpg");
     background-size: cover;
     width: 324px;
     height: 390px;
@@ -2821,7 +2821,7 @@ button,
   }
 
   .memberships::after {
-    background-image: url("../../../img/disks__tablet.png");
+    background-image: url("./../img/disks__tablet.png");
     background-size: 289px 345px;
     bottom: -86px;
     right: 0;
@@ -2876,7 +2876,7 @@ button,
   }
 
   .super-games::after {
-    background-image: url("../../../img/disks__tablet.png");
+    background-image: url("./../img/disks__tablet.png");
     background-size: 289px 345px;
     background-repeat: no-repeat;
     top: -298px;
@@ -2954,7 +2954,7 @@ button,
   .super-games__image {
     width: calc(100% - 292px);
     height: auto;
-    background: url("../../../img/super-games/super-games_tablet.png");
+    background: url("./../img/super-games/super-games_tablet.png");
     background-color: #011849;
     background-size: cover;
     background-position: center center;
@@ -3109,7 +3109,7 @@ button,
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     min-height: 462px;
-    background-image: url("../../../img/promo/promo_tablet.jpg");
+    background-image: url("./../img/promo/promo_tablet.jpg");
     background-size: 399px 100%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -3484,7 +3484,7 @@ button,
   .super-games__image {
     width: 100%;
     height: 292px;
-    background: url("../../../img/super-games/super-games_mobile.png");
+    background: url("./../img/super-games/super-games_mobile.png");
     background-color: #011849;
     background-size: cover;
     background-position: center center;
@@ -3660,7 +3660,7 @@ button,
     padding: 41px;
     max-width: 290px;
     min-height: 598px;
-    background-image: url("../../../img/promo/promo__mobile.jpg");
+    background-image: url("./../img/promo/promo__mobile.jpg");
     background-size: 100% 299px;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -3924,17 +3924,17 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .hero__image {
-    background: url("../../../img/hero/hero@2x.jpg");
+    background: url("./../img/hero/hero@2x.jpg");
     background-size: cover;
   }
 
   .gym__video {
-    background: url("../../../img/gym/image-video@2x.png");
+    background: url("./../img/gym/image-video@2x.png");
     background-size: cover;
   }
 
   .super-games__image {
-    background: url("../../../img/super-games/super-games@2x.png");
+    background: url("./../img/super-games/super-games@2x.png");
     background-size: cover;
     background-color: #011339;
     background-position: center center;
@@ -3944,7 +3944,7 @@ button,
   }
 
   .promotions__item--big {
-    background-image: url("../../../img/promo/promo@2x.jpg");
+    background-image: url("./../img/promo/promo@2x.jpg");
     background-size: 50% 100%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -3953,14 +3953,14 @@ button,
 
 @media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-device-width: 1199px) and (min-resolution: 1.5dppx) {
   .hero__image {
-    background: url("../../../img/hero/hero-tablet@2x.jpg");
+    background: url("./../img/hero/hero-tablet@2x.jpg");
     background-size: cover;
     width: 324px;
     height: 390px;
   }
 
   .super-games__image {
-    background: url("../../../img/super-games/super-games_tablet@2x.png");
+    background: url("./../img/super-games/super-games_tablet@2x.png");
     background-color: #011849;
     background-size: cover;
     background-position: center center;
@@ -3968,7 +3968,7 @@ button,
   }
 
   .promotions__item--big {
-    background-image: url("../../../img/promo/promo__tablet@2x.jpg");
+    background-image: url("./../img/promo/promo__tablet@2x.jpg");
     background-size: 399px 100%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -3977,7 +3977,7 @@ button,
 
 @media (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-device-width: 767px) and (min-resolution: 1.5dppx) {
   .super-games__image {
-    background: url("../../../img/super-games/super-games_mobile@2x.png");
+    background: url("./../img/super-games/super-games_mobile@2x.png");
     background-color: #011849;
     background-size: cover;
     background-position: center center;
@@ -3985,7 +3985,7 @@ button,
   }
 
   .promotions__item--big {
-    background-image: url("../../../img/promo/promo__mobile@2x.jpg");
+    background-image: url("./../img/promo/promo__mobile@2x.jpg");
     background-size: 100% 299px;
     background-position: center bottom;
     background-repeat: no-repeat;
