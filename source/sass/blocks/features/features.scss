@@ -84,12 +84,11 @@
       padding: 0;
       width: auto;
       justify-self: center;
-
     }
 
     &:nth-child(1),
     &:nth-child(2) {
-      border-bottom: 2px solid rgba(209, 10, 66, 0.20);
+      border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
       @include vp-1199 {
         border-bottom: none;

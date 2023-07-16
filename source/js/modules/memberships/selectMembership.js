@@ -1,14 +1,12 @@
 function selectMembership() {
-  const membershipsElements = document.querySelectorAll(".membership")
+  const membershipsElements = document.querySelectorAll('.membership');
 
   membershipsElements.forEach((item) =>
-    item.addEventListener("click", function () {
+    item.addEventListener('click', function () {
       membershipsElements.forEach((element) =>
-        element.classList.remove("is-active"),
-      )
-      item.classList.add("is-active")
-    }),
-  )
+        element.classList.remove('is-active'));
+      item.classList.add('is-active');
+    }));
 }
 
-export { selectMembership };
+export {selectMembership};

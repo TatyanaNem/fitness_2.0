@@ -2,11 +2,11 @@
   &__element {
     position: relative;
     font-family: $ff-secondary;
-    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
     color: $color-default-dark;
 
     &:first-child {
-      border-top: 1px solid rgba(28, 51, 116, 0.20);
+      border-top: 1px solid rgba(28, 51, 116, 0.2);
     }
 
     &.is-active {
@@ -17,13 +17,13 @@
       }
     }
 
-    &.is-active>.accordion__button {
+    &.is-active > .accordion__button {
       padding-bottom: 14px;
     }
 
-    &.is-active>.accordion__button::after {
+    &.is-active > .accordion__button::after {
       top: 61%;
-      background-image: url(../../../img/svg/minus.svg);
+      background-image: url("../../../img/svg/minus.svg");
 
       @include vp-767 {
         top: 53%;
@@ -64,7 +64,7 @@
       transform: translateY(-50%);
       width: 42px;
       height: 42px;
-      background-image: url(../../../img/svg/plus.svg);
+      background-image: url("../../../img/svg/plus.svg");
       background-size: 42px 42px;
 
       @include vp-767 {
@@ -76,7 +76,6 @@
   }
 
   &__content p {
-    max-width: 660px;
     margin: 0;
     max-width: 660px;
     font-size: 18px;

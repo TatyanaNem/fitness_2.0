@@ -22,13 +22,13 @@
     bottom: -93px;
     right: -31px;
     transform: rotate(150deg);
-    background-image: url(../../../img/disks.png);
+    background-image: url("../../../img/disks.png");
     background-size: 321px 384px;
     background-repeat: no-repeat;
     z-index: 1;
 
     @include vp-1199 {
-      background-image: url(../../../img/disks__tablet.png);
+      background-image: url("../../../img/disks__tablet.png");
       background-size: 289px 345px;
       bottom: -86px;
       right: 0;

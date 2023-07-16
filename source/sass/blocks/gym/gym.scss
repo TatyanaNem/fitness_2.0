@@ -29,7 +29,6 @@
 
     @include vp-767 {
       padding: 0 15px;
-
     }
 
     & h2 {
@@ -129,12 +128,12 @@
     left: 0;
     width: 364px;
     height: 228px;
-    background: url(../../../img/gym/image-video.png);
+    background: url("../../../img/gym/image-video.png");
     background-size: cover;
-    box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.50);
+    box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.5);
 
     @media (min-resolution: $retina-dppx) {
-      background: url(../../../img/gym/image-video@2x.png);
+      background: url("../../../img/gym/image-video@2x.png");
       background-size: cover;
     }
 

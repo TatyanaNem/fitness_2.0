@@ -74,13 +74,13 @@
     line-height: 1;
     text-align: center;
     color: $color-default-dark;
-    border: 1px solid rgba(16, 38, 84, 0.20);
+    border: 1px solid rgba(16, 38, 84, 0.2);
     background-color: transparent;
     cursor: pointer;
 
     &.is-active {
       border-color: transparent;
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       color: $color-default-light;
     }
 

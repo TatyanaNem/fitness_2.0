@@ -38,7 +38,7 @@
       width: 100%;
     }
 
-    &>p {
+    & > p {
       margin-top: 110px;
       margin-bottom: 15px;
       padding-right: 50px;
@@ -148,22 +148,22 @@
   &__image {
     width: 500px;
     height: 556px;
-    background: url(../../../img/hero/hero.jpg);
+    background: url("../../../img/hero/hero.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dppx) {
-      background: url(../../../img/hero/hero@2x.jpg);
+      background: url("../../../img/hero/hero@2x.jpg");
       background-size: cover;
     }
 
     @include vp-1199 {
-      background: url(../../../img/hero/hero-tablet.jpg);
+      background: url("../../../img/hero/hero-tablet.jpg");
       background-size: cover;
       width: 324px;
       height: 390px;
 
       @media (min-resolution: $retina-dppx) {
-        background: url(../../../img/hero/hero-tablet@2x.jpg);
+        background: url("../../../img/hero/hero-tablet@2x.jpg");
         background-size: cover;
         width: 324px;
         height: 390px;

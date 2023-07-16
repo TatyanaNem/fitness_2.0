@@ -121,7 +121,7 @@
       width: 100%;
       min-height: 462px;
       background-color: #ed0233;
-      background-image: url(../../../img/promo/promo.jpg);
+      background-image: url("../../../img/promo/promo.jpg");
       background-size: 50% 100%;
       background-position: right center;
       background-repeat: no-repeat;
@@ -129,7 +129,7 @@
       border: none;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url(../../../img/promo/promo@2x.jpg);
+        background-image: url("../../../img/promo/promo@2x.jpg");
         background-size: 50% 100%;
         background-position: right center;
         background-repeat: no-repeat;
@@ -138,13 +138,13 @@
       @include vp-1199 {
         flex-basis: 100%;
         min-height: 462px;
-        background-image: url(../../../img/promo/promo_tablet.jpg);
+        background-image: url("../../../img/promo/promo_tablet.jpg");
         background-size: 399px 100%;
         background-position: right center;
         background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dppx) {
-          background-image: url(../../../img/promo/promo__tablet@2x.jpg);
+          background-image: url("../../../img/promo/promo__tablet@2x.jpg");
           background-size: 399px 100%;
           background-position: right center;
           background-repeat: no-repeat;
@@ -155,13 +155,13 @@
         padding: 41px;
         max-width: 290px;
         min-height: 598px;
-        background-image: url(../../../img/promo/promo__mobile.jpg);
+        background-image: url("../../../img/promo/promo__mobile.jpg");
         background-size: 100% 299px;
         background-position: center bottom;
         background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dppx) {
-          background-image: url(../../../img/promo/promo__mobile@2x.jpg);
+          background-image: url("../../../img/promo/promo__mobile@2x.jpg");
           background-size: 100% 299px;
           background-position: center bottom;
           background-repeat: no-repeat;
