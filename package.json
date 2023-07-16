@@ -15,6 +15,7 @@
     "build": "gulp build",
     "dev": "gulp dev",
     "start": "gulp start",
+    "deploy": "gulp deploy",
     "webp": "gulp webp"
   },
   "editorconfig-cli": [

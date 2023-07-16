@@ -22,7 +22,6 @@
 
     @include vp-1199 {
       margin-top: 0;
-      margin-left: -7px;
       font-size: 42px;
       letter-spacing: 1.26px;
     }
@@ -101,7 +100,7 @@
       line-height: 1;
 
       @include vp-767 {
-        margin-bottom: 10px;
+        margin-bottom: 9px;
       }
     }
 
@@ -111,7 +110,7 @@
       line-height: 1.4;
 
       @include vp-767 {
-        margin-bottom: 19px;
+        margin-bottom: 20px;
       }
     }
 
@@ -121,7 +120,7 @@
       width: 100%;
       min-height: 462px;
       background-color: #ed0233;
-      background-image: url("../../../img/promo/promo.jpg");
+      background-image: url("./../img/promo/promo.jpg");
       background-size: 50% 100%;
       background-position: right center;
       background-repeat: no-repeat;
@@ -129,7 +128,7 @@
       border: none;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../../img/promo/promo@2x.jpg");
+        background-image: url("./../img/promo/promo@2x.jpg");
         background-size: 50% 100%;
         background-position: right center;
         background-repeat: no-repeat;
@@ -138,13 +137,13 @@
       @include vp-1199 {
         flex-basis: 100%;
         min-height: 462px;
-        background-image: url("../../../img/promo/promo_tablet.jpg");
+        background-image: url("./../img/promo/promo_tablet.jpg");
         background-size: 399px 100%;
         background-position: right center;
         background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dppx) {
-          background-image: url("../../../img/promo/promo__tablet@2x.jpg");
+          background-image: url("./../img/promo/promo__tablet@2x.jpg");
           background-size: 399px 100%;
           background-position: right center;
           background-repeat: no-repeat;
@@ -155,13 +154,13 @@
         padding: 41px;
         max-width: 290px;
         min-height: 598px;
-        background-image: url("../../../img/promo/promo__mobile.jpg");
+        background-image: url("./../img/promo/promo__mobile.jpg");
         background-size: 100% 299px;
         background-position: center bottom;
         background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dppx) {
-          background-image: url("../../../img/promo/promo__mobile@2x.jpg");
+          background-image: url("./../img/promo/promo__mobile@2x.jpg");
           background-size: 100% 299px;
           background-position: center bottom;
           background-repeat: no-repeat;
