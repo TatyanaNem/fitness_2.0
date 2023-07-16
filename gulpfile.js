@@ -19,9 +19,10 @@ import {
 } from "./gulp/optimizeImages.mjs";
 
 const deploy = () =>
-  gulp.src('build/*/**', {
-    base: 'build',
-  })
+  gulp.src([
+    'build/*.html',
+    'build/*/**'
+  ])
       .pipe(ghPages());
 
 const server = browserSync.create();
