@@ -3658,6 +3658,14 @@ button,
     background-repeat: no-repeat;
   }
 
+  .promotions__item--big h3 {
+    margin-bottom: 15px;
+  }
+
+  .promotions__item--big p {
+    margin-bottom: 28px;
+  }
+
   .promotions__link {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
