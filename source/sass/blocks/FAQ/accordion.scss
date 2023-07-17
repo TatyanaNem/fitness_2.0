@@ -17,11 +17,11 @@
       }
     }
 
-    &.is-active>.accordion__button {
+    &.is-active > .accordion__button {
       padding-bottom: 14px;
     }
 
-    &.is-active>.accordion__button::after {
+    &.is-active > .accordion__button::after {
       top: 61%;
       background-image: url("./../img/svg/minus.svg");
 
