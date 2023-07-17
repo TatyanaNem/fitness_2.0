@@ -17,13 +17,13 @@
       }
     }
 
-    &.is-active > .accordion__button {
+    &.is-active>.accordion__button {
       padding-bottom: 14px;
     }
 
-    &.is-active > .accordion__button::after {
+    &.is-active>.accordion__button::after {
       top: 61%;
-      background-image: url("../../../img/svg/minus.svg");
+      background-image: url("./../img/svg/minus.svg");
 
       @include vp-767 {
         top: 53%;
@@ -64,7 +64,7 @@
       transform: translateY(-50%);
       width: 42px;
       height: 42px;
-      background-image: url("../../../img/svg/plus.svg");
+      background-image: url("./../img/svg/plus.svg");
       background-size: 42px 42px;
 
       @include vp-767 {

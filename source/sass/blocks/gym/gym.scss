@@ -1,21 +1,23 @@
 .gym {
-  display: flex;
-  padding: 120px 103px 120px 240px;
   background-color: $color-default-light;
   min-height: 756px;
 
-  @include vp-1199 {
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 45px 80px;
-    margin-bottom: 99px;
-    text-align: center;
-  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 120px 103px 120px 163px;
 
-  @include vp-767 {
-    padding: 56px 0 70px;
-    margin-bottom: 0;
-    text-align: start;
+    @include vp-1199 {
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 45px 184px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      padding: 56px 0 70px;
+      text-align: start;
+    }
   }
 
   &__info {

@@ -1,5 +1,4 @@
 .memberships {
-  position: relative;
   background-color: $background-additional;
   min-height: 851px;
   padding: 120px 0 120px;
@@ -13,29 +12,33 @@
     padding: 63px 0 69px;
   }
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 321px;
-    height: 384px;
-    bottom: -93px;
-    right: -31px;
-    transform: rotate(150deg);
-    background-image: url("./../img/disks.png");
-    background-size: 321px 384px;
-    background-repeat: no-repeat;
-    z-index: 1;
+  &__container {
+    position: relative;
 
-    @include vp-1199 {
-      background-image: url("./../img/disks__tablet.png");
-      background-size: 289px 345px;
-      bottom: -86px;
-      right: 0;
-    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 321px;
+      height: 384px;
+      bottom: -216px;
+      right: -190px;
+      transform: rotate(150deg);
+      background-image: url("./../img/disks.png");
+      background-size: 321px 384px;
+      background-repeat: no-repeat;
+      z-index: 1;
 
-    @include vp-767 {
-      display: none;
+      @include vp-1199 {
+        background-image: url("./../img/disks__tablet.png");
+        background-size: 289px 345px;
+        bottom: -186px;
+        right: 0;
+      }
+
+      @include vp-767 {
+        display: none;
+      }
     }
   }
 
