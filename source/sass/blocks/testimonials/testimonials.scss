@@ -144,6 +144,7 @@
       height: 80px;
       object-fit: cover;
       border-radius: 50%;
+      color: transparent;
 
       @include vp-767 {
         width: 68px;

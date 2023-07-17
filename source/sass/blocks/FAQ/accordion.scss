@@ -1,6 +1,7 @@
 .accordion {
   &__element {
     position: relative;
+    margin-right: 1px;
     font-family: $ff-secondary;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
     color: $color-default-dark;

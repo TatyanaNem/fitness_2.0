@@ -2010,6 +2010,7 @@ button,
 
 .accordion__element {
   position: relative;
+  margin-right: 1px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   color: #102654;
@@ -2154,6 +2155,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
+  color: transparent;
 }
 
 .testimonials__image img::before {
