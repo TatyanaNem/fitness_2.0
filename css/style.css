@@ -907,12 +907,18 @@ button,
 }
 
 .gym {
+  background-color: #ffffff;
+  min-height: 756px;
+}
+
+.gym__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 120px 103px 120px 240px;
-  background-color: #ffffff;
-  min-height: 756px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 120px 103px 120px 163px;
 }
 
 .gym__info {
@@ -1047,21 +1053,24 @@ button,
 }
 
 .memberships {
-  position: relative;
   background-color: #f8f9fc;
   min-height: 851px;
   padding: 120px 0 120px;
   overflow: hidden;
 }
 
-.memberships::after {
+.memberships__container {
+  position: relative;
+}
+
+.memberships__container::after {
   content: "";
   display: block;
   position: absolute;
   width: 321px;
   height: 384px;
-  bottom: -93px;
-  right: -31px;
+  bottom: -216px;
+  right: -190px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
@@ -1285,20 +1294,26 @@ button,
 }
 
 .super-games {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 106px;
   width: 100%;
   overflow: hidden;
 }
 
-.super-games::after {
+.super-games__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.super-games__container::after {
   content: "";
   position: absolute;
   width: 321px;
   height: 384px;
-  top: -291px;
-  right: -31px;
+  top: -408px;
+  right: -190px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
@@ -1306,12 +1321,6 @@ button,
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
-}
-
-.super-games__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .super-games__info {
@@ -2020,7 +2029,7 @@ button,
 
 .accordion__element.is-active > .accordion__button::after {
   top: 61%;
-  background-image: url("../../../img/svg/minus.svg");
+  background-image: url("./../img/svg/minus.svg");
 }
 
 .accordion__button {
@@ -2046,7 +2055,7 @@ button,
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  background-image: url("../../../img/svg/plus.svg");
+  background-image: url("./../img/svg/plus.svg");
   background-size: 42px 42px;
 }
 
@@ -2297,6 +2306,7 @@ button,
   border: 3px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .custom-input,
@@ -2532,6 +2542,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -2753,7 +2765,7 @@ button,
     height: 390px;
   }
 
-  .gym {
+  .gym__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2761,8 +2773,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 100px 45px 80px;
-    margin-bottom: 99px;
+    padding: 100px 45px 184px;
     text-align: center;
   }
 
@@ -2817,10 +2828,10 @@ button,
     padding: 100px 0;
   }
 
-  .memberships::after {
+  .memberships__container::after {
     background-image: url("./../img/disks__tablet.png");
     background-size: 289px 345px;
-    bottom: -86px;
+    bottom: -186px;
     right: 0;
   }
 
@@ -2871,11 +2882,11 @@ button,
     padding-bottom: 92px;
   }
 
-  .super-games::after {
+  .super-games__container::after {
     background-image: url("./../img/disks__tablet.png");
     background-size: 289px 345px;
     background-repeat: no-repeat;
-    top: -298px;
+    top: -397px;
     right: 0;
   }
 
@@ -3347,9 +3358,8 @@ button,
     display: none;
   }
 
-  .gym {
+  .gym__container {
     padding: 56px 0 70px;
-    margin-bottom: 0;
     text-align: start;
   }
 
@@ -3389,7 +3399,7 @@ button,
     padding: 63px 0 69px;
   }
 
-  .memberships::after {
+  .memberships__container::after {
     display: none;
   }
 
@@ -3459,15 +3469,15 @@ button,
     padding-bottom: 49px;
   }
 
-  .super-games::after {
-    display: none;
-  }
-
   .super-games__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .super-games__container::after {
+    display: none;
   }
 
   .super-games__info {
