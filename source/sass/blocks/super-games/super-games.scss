@@ -228,7 +228,8 @@
   &__image {
     width: calc(100% - 500px);
     height: auto;
-    background: #102654 url("./../img/super-games/super-games.png");
+    background-image: image-set(url("./../img/super-games/super-games.webp") type("image/webp"),
+        url("./../img/super-games/super-games.png") type("image/png"));
     background-color: #102654;
     background-size: cover;
     background-position: center center;
@@ -236,7 +237,8 @@
     object-fit: cover;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("./../img/super-games/super-games@2x.png");
+      background-image: image-set(url("./../img/super-games/super-games@2x.webp") type("image/webp"),
+  url("./../img/super-games/super-games@2x.png") type("image/png"));
       background-size: cover;
       background-color: #011339;
       background-position: center center;
@@ -247,14 +249,16 @@
     @include vp-1199 {
       width: calc(100% - 292px);
       height: auto;
-      background: url("./../img/super-games/super-games_tablet.png");
+      background-image: image-set(url("./../img/super-games/super-games_tablet.webp") type("image/webp"),
+  url("./../img/super-games/super-games_tablet.png") type("image/png"));
       background-color: #011849;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dppx) {
-        background: url("./../img/super-games/super-games_tablet@2x.png");
+        background-image: image-set(url("./../img/super-games/super-games_tablet@2x.webp") type("image/webp"),
+            url("./../img/super-games/super-games_tablet@2x.png") type("image/png"));
         background-color: #011849;
         background-size: cover;
         background-position: center center;
@@ -265,14 +269,16 @@
     @include vp-767 {
       width: 100%;
       height: 292px;
-      background: url("./../img/super-games/super-games_mobile.png");
+      background-image: image-set(url("./../img/super-games/super-games_mobile.webp") type("image/webp"),
+          url("./../img/super-games/super-games_mobile.png") type("image/png"));
       background-color: #011849;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dppx) {
-        background: url("./../img/super-games/super-games_mobile@2x.png");
+        background-image: image-set(url("./../img/super-games/super-games_mobile@2x.webp") type("image/webp"),
+            url("./../img/super-games/super-games_mobile@2x.png") type("image/png"));
         background-color: #011849;
         background-size: cover;
         background-position: center center;

@@ -24,13 +24,19 @@
       bottom: -216px;
       right: -190px;
       transform: rotate(150deg);
-      background-image: url("./../img/disks.png");
+      background-image: -webkit-image-set(url("./../img/disks.webp"),
+          url("./../img/disks.png"));
+      background-image: image-set(url("./../img/disks.webp") type("image/webp"),
+          url("./../img/disks.png") type("image/png"));
       background-size: 321px 384px;
       background-repeat: no-repeat;
       z-index: 1;
 
       @include vp-1199 {
-        background-image: url("./../img/disks__tablet.png");
+        background-image: -webkit-image-set(url("./../img/disks__tablet.webp"),
+            url("./../img/disks__tablet.png"));
+        background-image: image-set(url("./../img/disks__tablet.webp") type("image/webp"),
+            url("./../img/disks__tablet.png") type("image/png"));
         background-size: 289px 345px;
         bottom: -186px;
         right: 0;

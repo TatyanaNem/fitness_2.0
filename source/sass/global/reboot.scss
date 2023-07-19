@@ -38,6 +38,7 @@ body {
 a {
   color: $color-default-dark;
   text-decoration: none;
+  user-select: none;
 
   &:hover {
     opacity: 0.8;
@@ -75,6 +76,7 @@ input:-webkit-autofill {
 input,
 textarea {
   border-radius: 0;
+  cursor: text;
 
   &::placeholder {
     opacity: 1;
@@ -91,6 +93,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -135,4 +138,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }

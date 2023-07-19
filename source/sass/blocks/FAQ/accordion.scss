@@ -18,11 +18,11 @@
       }
     }
 
-    &.is-active > .accordion__button {
+    &.is-active>.accordion__button {
       padding-bottom: 14px;
     }
 
-    &.is-active > .accordion__button::after {
+    &.is-active>.accordion__button::after {
       top: 61%;
       background-image: url("./../img/svg/minus.svg");
 
@@ -43,6 +43,10 @@
     background-color: transparent;
     text-align: start;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     @include vp-1199 {
       line-height: 1.13;

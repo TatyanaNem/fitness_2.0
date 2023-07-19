@@ -29,14 +29,14 @@
   }
 
   &__logo {
-    margin-top: 10px;
-    font-size: 26px;
-    letter-spacing: 0.52px;
+    padding-top: 10px;
+    width: 88px;
+    height: 32px;
 
     @include vp-1199 {
-      margin-top: 0;
-      font-size: 24px;
-      letter-spacing: 0.48px;
+      padding-top: 0;
+      width: 82px;
+      height: 17px;
     }
 
     @include vp-767 {

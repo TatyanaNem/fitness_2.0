@@ -1,11 +1,8 @@
 .logo {
-  font-family: $ff-primary;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 43px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: $color-default-light;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -13,19 +10,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  @include vp-1199 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0.48px;
-  }
-
-  @include vp-767 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.4px;
   }
 }

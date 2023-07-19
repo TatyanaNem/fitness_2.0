@@ -83,7 +83,7 @@
       line-height: 1.5;
 
       @include vp-1199 {
-        width: 502px;
+        width: 503px;
         margin: 0 auto 43px;
 
         +p {
@@ -129,12 +129,14 @@
     left: 0;
     width: 364px;
     height: 228px;
-    background: url("./../img/gym/image-video.png");
+    background-image: image-set(url("./../img/gym/image-video.webp") type("image/webp"),
+  url("./../img/gym/image-video.png") type("image/png"));
     background-size: cover;
     box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.5);
 
     @media (min-resolution: $retina-dppx) {
-      background: url("./../img/gym/image-video@2x.png");
+      background-image: image-set(url("./../img/gym/image-video@2x.webp") type("image/webp"),
+          url("./../img/gym/image-video@2x.png") type("image/png"));
       background-size: cover;
     }
 
