@@ -1,21 +1,21 @@
 .coach {
   position: relative;
-  width: 260px;
+  max-width: 260px;
   height: 294px;
   color: $color-default-light;
   background-color: #afafaf;
   cursor: pointer;
 
   @include vp-1199 {
-    width: 226px;
+    max-width: 268px;
   }
 
   @include vp-767 {
-    width: 226px;
+    max-width: 226px;
     height: 274px;
   }
 
-  & .is-active ~ .coach-info {
+  & .is-active~.coach-info {
     opacity: 0.89;
   }
 

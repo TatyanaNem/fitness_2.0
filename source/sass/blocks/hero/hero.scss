@@ -20,6 +20,7 @@
 
     @include vp-1199 {
       gap: 30px;
+      max-width: 768px;
     }
   }
 
@@ -38,7 +39,7 @@
       width: 100%;
     }
 
-    & > p {
+    &>p {
       margin-top: 110px;
       margin-bottom: 15px;
       padding-right: 50px;

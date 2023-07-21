@@ -12,6 +12,8 @@
     padding: 0;
 
     @include vp-1199 {
+      margin: 0 auto;
+      max-width: 768px;
       padding: 66px 163px 68px 133px;
     }
 

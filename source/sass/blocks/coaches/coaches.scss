@@ -45,15 +45,26 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    @include vp-1199 {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      max-width: 320px;
+      margin: 0 auto;
+    }
   }
 
   &__swiper {
-    width: 1160px;
+    max-width: 89%;
     margin: 0 auto;
     overflow: hidden;
 
     @include vp-1199 {
       width: 566px;
+      max-width: 100%;
     }
 
     @include vp-767 {

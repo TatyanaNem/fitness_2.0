@@ -10,6 +10,8 @@
     @include vp-1199 {
       flex-direction: column;
       align-items: center;
+      max-width: 768px;
+      margin: 0 auto;
       padding: 100px 45px 184px;
       text-align: center;
     }
@@ -112,6 +114,7 @@
     }
 
     & img {
+      position: relative;
       width: 100%;
       height: auto;
 
@@ -126,11 +129,13 @@
   &__video {
     position: absolute;
     transform: translateY(-50%);
+    right: 0;
     left: 0;
-    width: 364px;
-    height: 228px;
+    width: 50%;
+    min-width: 266px;
+    height: 57%;
     background-image: image-set(url("./../img/gym/image-video.webp") type("image/webp"),
-  url("./../img/gym/image-video.png") type("image/png"));
+        url("./../img/gym/image-video.png") type("image/png"));
     background-size: cover;
     box-shadow: inset 0 0 0 200vw rgba(20, 54, 122, 0.5);
 
