@@ -223,6 +223,23 @@
       border-width: 2px;
       letter-spacing: 0.5px;
     }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $color-default-light;
+      color: $color-text-accent;
+    }
+
+    &:active {
+      background-color: $color-default-light;
+      color: $color-default-dark;
+      opacity: 1;
+    }
   }
 
   &__image {

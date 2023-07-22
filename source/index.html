@@ -236,7 +236,7 @@
               </div>
             </div>
             <p>Ежегодные соревнования по CrossFit</p>
-            <a class="super-games__link btn" href="#">заполнить заявку</a>
+            <a class="super-games__link" href="#">заполнить заявку</a>
           </div>
           <div class="super-games__image">
           </div>
@@ -394,7 +394,8 @@
                 </li>
               </ul>
             </div>
-            <div class="coaches__swiper-button swiper-button-prev swiper-button-prev--coaches">
+            <div
+              class="coaches__swiper-button coaches__swiper-button--prev swiper-button-prev swiper-button-prev--coaches">
               <svg class="coaches__button-icon coaches__button-icon--prev" role="img" aria-label="Назад." width="18"
                 height="34">
                 <use xlink:href="img/sprite.svg#arrow"></use>
@@ -697,7 +698,7 @@
         </div>
       </section>
       <section class="testimonials" id="testimonials">
-        <div class="container">
+        <div class="container testimonials__container">
           <h2>Отзывы</h2>
           <div class="testimonials__swiper-container">
             <div class="testimonials__swiper">
@@ -739,8 +740,18 @@
                 </li>
               </ul>
             </div>
-            <div class="testimonials__swiper-button testimonials__swiper-button--next swiper-button-next"></div>
-            <div class="testimonials__swiper-button testimonials__swiper-button--prev swiper-button-prev"></div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--next swiper-button-next">
+              <svg class="testimonials__button-icon testimonials__button-icon--prev" role="img" aria-label="Назад."
+                width="18" height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--prev swiper-button-prev">
+              <svg class="testimonials__button-icon testimonials__button-icon--prev" role="img" aria-label="Назад."
+                width="18" height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -749,11 +760,12 @@
           <section class="free-class">
             <div class="free-class__container">
               <h2>Бесплатное занятие</h2>
-              <div class="free-class__form" data-form-validate="" data-callback="base" data-parent-validate="base"
+              <div class="free-class__form" data-form-validate="name" data-callback="base" data-parent-validate="base"
                 data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
                 <form class="form" method="post" action="https://echo.htmlacademy.ru/" data-form-validate
                   data-parent-validate="base">
-                  <div class="form__field" data-on-input-validate data-message-base="Поле обязательно к заполнению"
+                  <div class="form__field" data-validate-type="text" data-on-input-validate
+                    data-message-base="Поле обязательно к заполнению"
                     data-message-extra="Проверьте корректность заполнения поля"
                     data-message-success="Поле заполнено верно" data-required>
                     <label>

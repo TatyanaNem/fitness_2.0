@@ -80,6 +80,7 @@
 
     &:hover,
     &:focus {
+      outline: none;
       border: 1px solid $color-default-dark;
     }
 

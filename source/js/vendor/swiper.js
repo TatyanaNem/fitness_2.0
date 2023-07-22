@@ -2,6 +2,9 @@
 new Swiper(".swiper-coaches", {
   direction: "horizontal",
   loop: true,
+  keyboard: {
+        enabled: true,
+    },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -27,6 +30,9 @@ new Swiper(".swiper-coaches", {
 new Swiper(".testimonials__swiper", {
   direction: "horizontal",
   slidesPerView: 1,
+  keyboard: {
+        enabled: true,
+    },
   loop: false,
   navigation: {
     nextEl: ".testimonials__swiper-button--next",

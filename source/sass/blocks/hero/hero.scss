@@ -142,6 +142,7 @@
 
     &:hover,
     &:focus {
+      outline: none;
       background-color: $color-default-light;
       color: $color-text-accent;
     }
