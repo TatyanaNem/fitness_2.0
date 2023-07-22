@@ -15,12 +15,12 @@
   <link rel="icon" type="image/png" sizes="120x120" href="img/favicons/favicon-120x120.png">
   <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon.png">
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/Roboto-Condensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -46,7 +46,7 @@
                 <li class="hero__feature-item">Кардио-зона</li>
               </ul>
             </div>
-            <a class="hero__buy-button btn" href="#memberships">Купить абонемент</a>
+            <a class="hero__buy-button" href="#memberships">Купить абонемент</a>
           </div>
           <div class="hero__image">
           </div>
@@ -84,11 +84,26 @@
                 alt="Изображение тренажерного зала">
             </picture>
             <div class="gym__video video">
-              <span class="video__play">
-                <svg class="video__icon" role="img" aria-label="Воспроизвести видео" width="12" height="12">
-                  <use xlink:href="img/sprite.svg#Play"></use>
+              <button class="video__play">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img"
+                  aria-label="Воспроизвести видео" fill="none">
+                  <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-width="2" />
+                  <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_293)" />
+                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="currentColor" />
+                  <defs>
+                    <lineargradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                      gradientUnits="userSpaceOnUse">
+                      <stop class="stroke-1" stop-color="currentColor" />
+                      <stop class="stroke-2" offset="1" stop-color="currentColor" />
+                    </lineargradient>
+                    <lineargradient id="paint1_linear_1_293" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                      gradientUnits="userSpaceOnUse">
+                      <stop class="fill-1" stop-color="currentColor" />
+                      <stop class="fill-2" offset="0.885417" stop-color="currentColor" />
+                    </lineargradient>
+                  </defs>
                 </svg>
-              </span>
+              </button>
             </div>
           </div>
         </div>
@@ -112,9 +127,9 @@
                     </p>
                     <div class="membership__price" data-price="5000">5000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
-                <li class="tabs__element membership is-active" data-membership="day">
+                <li class="tabs__element membership" data-membership="day">
                   <div class="membership__wrapper">
                     <h3 class="membership__title">Дневной</h3>
                     <p class="membership__description">
@@ -122,7 +137,7 @@
                     </p>
                     <div class="membership__price" data-price="1700">1700<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
                 <li class="tabs__element membership" data-membership="full">
                   <div class="membership__wrapper">
@@ -132,7 +147,7 @@
                     </p>
                     <div class="membership__price" data-price="2700">2700<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
               </ul>
               <ul class="memberships__elements-list tabs__element" data-tabs="element">
@@ -144,7 +159,7 @@
                     </p>
                     <div class="membership__price" data-price="25000">25000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
                 <li class="tabs__element membership" data-membership="day">
                   <div class="membership__wrapper">
@@ -154,7 +169,7 @@
                     </p>
                     <div class="membership__price" data-price="12000">15000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
                 <li class="tabs__element membership" data-membership="full">
                   <div class="membership__wrapper">
@@ -164,7 +179,7 @@
                     </p>
                     <div class="membership__price" data-price="15000">15000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
               </ul>
               <ul class="memberships__elements-list tabs__element" data-tabs="element">
@@ -176,7 +191,7 @@
                     </p>
                     <div class="membership__price" data-price="50000">50000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
                 <li class="tabs__element membership" data-membership="day">
                   <div class="membership__wrapper">
@@ -186,7 +201,7 @@
                     </p>
                     <div class="membership__price" data-price="21000">21000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
                 <li class="tabs__element membership" data-membership="full">
                   <div class="membership__wrapper">
@@ -196,7 +211,7 @@
                     </p>
                     <div class="membership__price" data-price="">28000<span>₽</span></div>
                   </div>
-                  <a href="#" class="membership__link btn">Купить абонемент</a>
+                  <a href="#" class="membership__link">Купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -221,7 +236,7 @@
               </div>
             </div>
             <p>Ежегодные соревнования по CrossFit</p>
-            <a class="super-games__link btn" href="#">заполнить заявку</a>
+            <a class="super-games__link" href="#">заполнить заявку</a>
           </div>
           <div class="super-games__image">
           </div>
@@ -379,8 +394,20 @@
                 </li>
               </ul>
             </div>
-            <div class="coaches__swiper-button swiper-button-next swiper-button-next--coaches"></div>
-            <div class="coaches__swiper-button swiper-button-prev swiper-button-prev--coaches"></div>
+            <div
+              class="coaches__swiper-button coaches__swiper-button--prev swiper-button-prev swiper-button-prev--coaches">
+              <svg class="coaches__button-icon coaches__button-icon--prev" role="img" aria-label="Назад." width="18"
+                height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div
+              class="coaches__swiper-button coaches__swiper-button--next swiper-button-next swiper-button-next--coaches">
+              <svg class="coaches__button-icon coaches__button-icon--next" role="img" aria-label="Вперед." width="18"
+                height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -482,7 +509,15 @@
                 data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button" data-accordion="button">
-                    Как стать членом фитнес-центра?
+                    <p>Как стать членом фитнес-центра?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
                   </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
@@ -491,7 +526,17 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Где можно посмотреть расписание?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Где можно посмотреть расписание?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -502,8 +547,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Есть кулеры в центре? Предоставляются
-                    полотенца?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Есть кулеры в центре? Предоставляются
+                      полотенца?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -514,8 +569,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Сколько тренеров работает в клубе и какова
-                    их&nbsp;квалификация?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Сколько тренеров работает в клубе и какова
+                      их&nbsp;квалификация?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -529,8 +594,18 @@
               <div class="FAQ__tabs-element tabs__element FAQ__accordion accordion" data-tabs="element"
                 data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Занятия с&nbsp;тренером входят
-                    в&nbsp;абонемент?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Занятия с&nbsp;тренером входят
+                      в&nbsp;абонемент?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
                       В&nbsp;зале всегда
@@ -540,7 +615,17 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Можно ли заморозить абонемент?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Можно ли заморозить абонемент?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -551,9 +636,19 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Есть ли лимит по&nbsp;посещениям
-                    тренажерного
-                    зала и&nbsp;групповых занятий?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Есть ли лимит по&nbsp;посещениям
+                      тренажерного
+                      зала и&nbsp;групповых занятий?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -564,8 +659,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Что такое семейный доступ и&nbsp;доступ
-                    для&nbsp;друзей?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Что такое семейный доступ и&nbsp;доступ
+                      для&nbsp;друзей?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -579,16 +684,36 @@
               <div class="FAQ__tabs-element tabs__element FAQ__accordion accordion" data-tabs="element"
                 data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Предлагает ли клуб услуги
-                    по&nbsp;консультированию по&nbsp;вопросам питания?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Предлагает ли клуб услуги
+                      по&nbsp;консультированию по&nbsp;вопросам питания?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу.
                       Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Проводятся&nbsp;ли в&nbsp;клубе
-                    какие&#8209;либо мероприятия или соревнования?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Проводятся&nbsp;ли в&nbsp;клубе
+                      какие&#8209;либо мероприятия или соревнования?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -599,9 +724,17 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Можно ли&nbsp;приобрести в&nbsp;центре
-                    спортивное
-                    питание?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Можно ли&nbsp;приобрести в&nbsp;центре спортивное питание?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -612,8 +745,17 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Есть ли&nbsp;в&nbsp;центре детская
-                    комната?</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Есть ли&nbsp;в&nbsp;центре детская комната?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis
@@ -627,44 +769,82 @@
               <div class="FAQ__tabs-element tabs__element FAQ__accordion accordion" data-tabs="element"
                 data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Правила посещения душевых</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Есть в фитнес-центре дресс-код?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptates ullam tenetur,
-                      perspiciatis id debitis. Eligendi quos repellendus optio quia ad odit architecto consequatur sint
-                      modi tempora! Consequuntur, distinctio non.</p>
+                    <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь
+                      и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки,
+                      спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком,
+                      в&nbsp;пляжных или домашних тапочках
+                      и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).</p>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Правила посещения раздевалок</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Можно ли приводить с собой детей на
+                      тренировки?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
-                      perspiciatis
-                      impedit ab aperiam
-                      neque corrupti nisi deleniti optio enim provident molestiae, quidem sint laboriosam reiciendis
-                      accusantium iusto
-                      distinctio!</p>
+                    <p>Да. Вы&nbsp;можете приходить с&nbsp;детьми. У&nbsp;нас также есть большое количество детских
+                      секции, так что ваши дети обязательно найдут то, что придется им по душе.</p>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Правила посещения спа-процедур</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Какие дополнительные правила посещения
+                      центра?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
-                      perspiciatis
-                      impedit ab aperiam
-                      neque corrupti nisi deleniti optio enim provident molestiae, quidem sint laboriosam reiciendis
-                      accusantium iusto
-                      distinctio!</p>
+                    <p>При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                      В&nbsp;зале всегда
+                      присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                      по&nbsp;тренажеру или
+                      технике выполнения упражнения.</p>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">Правила посещения бассейна</button>
+                  <button class="accordion__button" data-accordion="button">
+                    <p>Нужна&nbsp;ли медицинская справка
+                      для&nbsp;посещения
+                      залов и&nbsp;бассейна?</p>
+                    <span class="accordion__icon">
+                      <svg role="img" aria-label="Открыть." width="18" height="18">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                      <svg role="img" aria-label="Закрыть." width="18" height="2">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                      </svg>
+                    </span>
+                  </button>
                   <div class="accordion__content" data-accordion="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
-                      perspiciatis
-                      impedit ab aperiam
-                      neque corrupti nisi deleniti optio enim provident molestiae, quidem sint laboriosam reiciendis
-                      accusantium iusto
-                      distinctio!</p>
+                    <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                      договор. При покупке
+                      абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
                   </div>
                 </div>
               </div>
@@ -673,7 +853,7 @@
         </div>
       </section>
       <section class="testimonials" id="testimonials">
-        <div class="container">
+        <div class="container testimonials__container">
           <h2>Отзывы</h2>
           <div class="testimonials__swiper-container">
             <div class="testimonials__swiper">
@@ -715,8 +895,18 @@
                 </li>
               </ul>
             </div>
-            <div class="testimonials__swiper-button testimonials__swiper-button--next swiper-button-next"></div>
-            <div class="testimonials__swiper-button testimonials__swiper-button--prev swiper-button-prev"></div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--next swiper-button-next">
+              <svg class="testimonials__button-icon testimonials__button-icon--prev" role="img" aria-label="Назад."
+                width="18" height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="testimonials__swiper-button testimonials__swiper-button--prev swiper-button-prev">
+              <svg class="testimonials__button-icon testimonials__button-icon--prev" role="img" aria-label="Назад."
+                width="18" height="34">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -725,11 +915,12 @@
           <section class="free-class">
             <div class="free-class__container">
               <h2>Бесплатное занятие</h2>
-              <div class="free-class__form" data-form-validate="" data-callback="base" data-parent-validate="base"
+              <div class="free-class__form" data-form-validate="name" data-callback="base" data-parent-validate="base"
                 data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
                 <form class="form" method="post" action="https://echo.htmlacademy.ru/" data-form-validate
                   data-parent-validate="base">
-                  <div class="form__field" data-on-input-validate data-message-base="Поле обязательно к заполнению"
+                  <div class="form__field" data-validate-type="text" data-on-input-validate
+                    data-message-base="Поле обязательно к заполнению"
                     data-message-extra="Проверьте корректность заполнения поля"
                     data-message-success="Поле заполнено верно" data-required>
                     <label>
