@@ -37,16 +37,9 @@ body {
 
 a {
   color: $color-default-dark;
+  outline-color: $color-default-light;
   text-decoration: none;
   user-select: none;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 img,
@@ -137,6 +130,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  outline-color: transparent;
   appearance: none;
   user-select: none;
 }

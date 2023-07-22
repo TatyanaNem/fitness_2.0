@@ -22,6 +22,13 @@
   }
 
   &__item {
+    margin-right: 40px;
+
+    &:last-child,
+    &:first-child {
+      margin-right: 0;
+    }
+
     @include vp-767 {
       margin-bottom: 21px;
 
@@ -32,13 +39,18 @@
   }
 
   &__link {
+    position: relative;
     display: block;
-    padding: 20px;
+    padding: 10px 0;
     font-size: 14px;
     font-family: $ff-secondary;
     font-weight: 400;
     line-height: 16px;
     color: $color-default-light;
+
+    &:hover {
+      border-bottom: 1px solid $color-default-light;
+    }
 
     @include vp-1199 {
       padding: 20px 15px;
