@@ -96,6 +96,7 @@
     background-color: transparent;
     border: 1px solid transparent;
     color: #afafaf;
+    outline: none;
 
     &--next {
       transform: rotate(180deg);
@@ -138,10 +139,18 @@
 
   & .swiper-button-prev {
     left: 0;
+
+    @include vp-1199 {
+      left: 0;
+    }
   }
 
   & .swiper-button-next {
     right: 0;
+
+    @include vp-1199 {
+      right: 0;
+    }
   }
 
   & .swiper-button-next::after,

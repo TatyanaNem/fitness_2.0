@@ -191,12 +191,14 @@
     background-color: transparent;
     border: 1px solid transparent;
     color: #afafaf;
+    outline: none;
 
     &--next {
       transform: rotate(180deg);
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: $color-default-dark;
       color: $color-default-dark;
     }

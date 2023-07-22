@@ -1,5 +1,6 @@
 .coach {
   position: relative;
+  width: 260px;
   max-width: 260px;
   height: 294px;
   color: $color-default-light;
@@ -7,10 +8,12 @@
   cursor: pointer;
 
   @include vp-1199 {
+    width: 268px;
     max-width: 268px;
   }
 
   @include vp-767 {
+    width: 226px;
     max-width: 226px;
     height: 274px;
   }
@@ -45,16 +48,24 @@
     margin-bottom: auto;
     text-align: center;
     z-index: 20;
+
+    @include vp-1199 {
+      padding-right: 10px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+    }
   }
 
   &:hover h3,
   &:focus h3 {
-    bottom: 73%;
+    top: 33px;
     transition: 0.5s all ease-in-out;
 
     @include vp-767 {
       margin-bottom: 0;
-      bottom: 75%;
+      top: 22px;
     }
   }
 
@@ -64,6 +75,7 @@
     position: absolute;
     display: block;
     width: 100%;
+    min-height: 294px;
     bottom: 0;
     font-family: $ff-secondary;
     font-size: 16px;
@@ -75,17 +87,28 @@
 
     @include vp-767 {
       padding-top: 48px;
+      min-height: 274px;
     }
 
     & p {
       margin-bottom: 34px;
+
+      @include vp-1199 {
+        padding-right: 6px;
+      }
+
+      @include vp-767 {
+        padding-right: 0;
+      }
     }
   }
 
   &:hover .coach__info,
   &:focus .coach__info {
+    height: auto;
     opacity: 0.89;
     top: 0;
+    overflow-y: auto;
     transition: all 0.8s ease-in-out;
   }
 

@@ -77,6 +77,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 211px;
     padding: 24px 28px;
     font-family: $ff-secondary;
     border: 7px solid transparent;
@@ -85,7 +86,6 @@
 
     @include vp-1199 {
       width: calc(50% - 15px);
-      min-height: 211px;
     }
 
     @include vp-767 {
@@ -226,15 +226,6 @@
       opacity: 0.8;
     }
 
-    &:active {
-      opacity: 1;
-      outline-color: transparent;
-
-      &::after {
-        background-color: $color-default-dark;
-      }
-    }
-
     &:focus {
       outline: 1px solid $color-default-dark;
       outline-offset: 8px;
@@ -242,6 +233,11 @@
       &::after {
         display: none;
       }
+    }
+
+    &:active {
+      opacity: 1;
+      outline-color: transparent;
     }
 
     @include vp-767 {
