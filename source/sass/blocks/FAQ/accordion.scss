@@ -31,10 +31,10 @@
       }
     }
 
-    &.is-active>.accordion__button {
+    &.is-active > .accordion__button {
       padding-bottom: 2px;
 
-      &>.accordion__icon {
+      & > .accordion__icon {
         top: 73%;
         background-color: $color-default-dark;
 
@@ -91,9 +91,9 @@
       }
 
       @include vp-767 {
+        padding-right: 23px;
         line-height: 1.2;
         font-size: 18px;
-        max-width: 238px;
       }
     }
 

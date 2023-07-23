@@ -94,6 +94,6 @@
 
 .form .is-invalid {
   & input {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $color-error;
   }
 }

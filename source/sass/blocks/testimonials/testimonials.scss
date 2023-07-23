@@ -57,7 +57,7 @@
     }
 
     @include vp-767 {
-      max-width: 315px;
+      max-width: 320px;
     }
   }
 
@@ -87,11 +87,13 @@
     grid-template-columns: 80px 1fr;
     grid-template-rows: min-content min-content;
     gap: 0 28px;
+    width: 560px;
     padding: 54px 62px 57px;
     font-family: $ff-secondary;
     background-color: #1c3374;
 
     @include vp-1199 {
+      width: 566px;
       padding: 54px 65px 57px;
     }
 
@@ -99,6 +101,7 @@
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       gap: 0 15px;
+      width: 226px;
       padding: 40px 15px 34px;
     }
 

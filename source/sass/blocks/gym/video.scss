@@ -34,7 +34,7 @@
       }
 
       & path {
-        fill: white;
+        fill: $color-default-light;
       }
     }
 
@@ -63,7 +63,7 @@
     }
 
     &:disabled {
-      opacity: .4;
+      opacity: 0.4;
 
       & .stroke-1,
       & .stroke-2 {

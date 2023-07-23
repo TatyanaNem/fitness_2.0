@@ -22,10 +22,8 @@
       width: 321px;
       height: 384px;
       bottom: -216px;
-      right: -190px;
+      right: -166px;
       transform: rotate(150deg);
-      background-image: -webkit-image-set(url("./../img/disks.webp"),
-          url("./../img/disks.png"));
       background-image: image-set(url("./../img/disks.webp") type("image/webp"),
           url("./../img/disks.png") type("image/png"));
       background-size: 321px 384px;
@@ -33,8 +31,6 @@
       z-index: 1;
 
       @include vp-1199 {
-        background-image: -webkit-image-set(url("./../img/disks__tablet.webp"),
-            url("./../img/disks__tablet.png"));
         background-image: image-set(url("./../img/disks__tablet.webp") type("image/webp"),
             url("./../img/disks__tablet.png") type("image/png"));
         background-size: 289px 345px;

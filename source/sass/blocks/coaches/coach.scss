@@ -18,7 +18,7 @@
     height: 274px;
   }
 
-  & .is-active~.coach-info {
+  & .is-active ~ .coach-info {
     opacity: 0.89;
   }
 

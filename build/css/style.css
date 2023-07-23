@@ -778,13 +778,17 @@ button,
   color: #ffffff;
 }
 
+.header__phone:hover {
+  opacity: 0.7;
+}
+
 .logo img {
   width: 100%;
   height: auto;
 }
 
 .logo:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .logo:active {
@@ -1012,7 +1016,7 @@ button,
 }
 
 .video__play svg path {
-  fill: white;
+  fill: #ffffff;
 }
 
 .video__play:hover,
@@ -1100,11 +1104,10 @@ button,
   width: 321px;
   height: 384px;
   bottom: -216px;
-  right: -190px;
+  right: -166px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
-  background-image: -webkit-image-set(url("./../img/disks.webp"), url("./../img/disks.png"));
   background-image: -webkit-image-set(url("./../img/disks.webp") type("image/webp"), url("./../img/disks.png") type("image/png"));
   background-image: image-set(url("./../img/disks.webp") type("image/webp"), url("./../img/disks.png") type("image/png"));
   background-size: 321px 384px;
@@ -1243,22 +1246,22 @@ button,
 
 .membership:hover,
 .membership:active {
-  -o-border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-  border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
 }
 
 .membership.is-active {
   border-width: 7px;
   border-style: solid;
-  -o-border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-  border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
 }
 
 .membership.is-active .membership__link {
   border: 2px solid transparent;
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
 }
 
@@ -1341,7 +1344,7 @@ button,
 .membership__link:hover,
 .membership__link:focus {
   border: 2px solid transparent;
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
 }
 
@@ -1369,7 +1372,7 @@ button,
   width: 321px;
   height: 384px;
   top: -408px;
-  right: -190px;
+  right: -166px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
@@ -1981,8 +1984,8 @@ button,
   padding: 24px 28px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 7px solid transparent;
-  -o-border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-  border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
 }
 
@@ -2335,6 +2338,7 @@ button,
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   gap: 0 28px;
+  width: 560px;
   padding: 54px 62px 57px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background-color: #1c3374;
@@ -2626,7 +2630,7 @@ button,
 }
 
 .form .is-invalid input {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ff121f;
 }
 
 .custom-input,
@@ -2827,6 +2831,11 @@ button,
 
 .contacts__item a:hover {
   text-decoration: underline;
+}
+
+.contacts__item a:focus {
+  outline: 1px solid #102654;
+  outline-offset: 8px;
 }
 
 .footer {
@@ -3207,7 +3216,6 @@ button,
   }
 
   .memberships__container::after {
-    background-image: -webkit-image-set(url("./../img/disks__tablet.webp"), url("./../img/disks__tablet.png"));
     background-image: -webkit-image-set(url("./../img/disks__tablet.webp") type("image/webp"), url("./../img/disks__tablet.png") type("image/png"));
     background-image: image-set(url("./../img/disks__tablet.webp") type("image/webp"), url("./../img/disks__tablet.png") type("image/png"));
     background-size: 289px 345px;
@@ -3518,7 +3526,7 @@ button,
   }
 
   .FAQ {
-    padding: 78px 0 96px;
+    padding: 78px 0 98px;
   }
 
   .FAQ h2 {
@@ -3619,6 +3627,7 @@ button,
   }
 
   .testimonials__item {
+    width: 566px;
     padding: 54px 65px 57px;
   }
 
@@ -4203,9 +4212,9 @@ button,
   }
 
   .accordion__button p {
+    padding-right: 23px;
     line-height: 1.2;
     font-size: 18px;
-    max-width: 238px;
   }
 
   .accordion {
@@ -4244,7 +4253,7 @@ button,
   }
 
   .testimonials__swiper-container {
-    max-width: 315px;
+    max-width: 320px;
   }
 
   .testimonials__list {
@@ -4257,6 +4266,7 @@ button,
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     gap: 0 15px;
+    width: 226px;
     padding: 40px 15px 34px;
   }
 

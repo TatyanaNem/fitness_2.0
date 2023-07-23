@@ -192,6 +192,11 @@
         text-decoration: underline;
       }
 
+      &:focus {
+        outline: 1px solid $color-default-dark;
+        outline-offset: 8px;
+      }
+
       @include vp-1199 {
         font-size: 18px;
       }

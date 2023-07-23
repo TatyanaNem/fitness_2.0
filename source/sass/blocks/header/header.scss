@@ -54,6 +54,10 @@
     letter-spacing: 0.03em;
     color: $color-default-light;
 
+    &:hover {
+      opacity: 0.7;
+    }
+
     @include vp-1199 {
       margin-top: 0;
       font-size: 24px;
