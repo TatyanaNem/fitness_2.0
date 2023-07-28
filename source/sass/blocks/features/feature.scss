@@ -1,6 +1,4 @@
 .feature {
-  display: flex;
-  gap: 30px;
   font-family: $ff-secondary;
 
   @include vp-767 {
@@ -13,11 +11,16 @@
   &__count {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     text-align: center;
 
+    @include vp-767 {
+      align-items: center;
+    }
+
     & span:first-of-type {
-      display: inline-block;
+      display: block;
       margin-top: -10px;
       font-size: 71px;
       font-weight: 700;
@@ -48,7 +51,6 @@
   }
 
   &__about {
-    min-width: 183px;
     max-width: 227px;
 
     & h3 {
@@ -63,6 +65,10 @@
         margin-bottom: 6px;
         font-size: 20px;
       }
+
+      @include vp-767 {
+        margin-bottom: 6px;
+      }
     }
 
     & p {
@@ -70,18 +76,23 @@
       margin-bottom: 0;
       font-size: 16px;
       font-weight: 300;
-      line-height: 1.4;
+      line-height: 22.4px;
       color: $color-default-dark;
+
+      @include vp-767 {
+        line-height: 1.5;
+      }
     }
   }
 
   &--center {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    background-color: #1c3374;
-    color: $color-default-light;
-    text-align: center;
+    display: none;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 32px;
+    // background-color: #1c3374;
+    // color: $color-default-light;
+    // text-align: center;
 
     @include vp-1199 {
       gap: 13px;
