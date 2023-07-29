@@ -166,7 +166,8 @@
 
   &__elements-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     width: 100%;

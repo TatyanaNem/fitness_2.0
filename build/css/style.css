@@ -1398,9 +1398,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -2746,7 +2748,7 @@ button,
 .promotions__list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 560px);
+  grid-template-columns: repeat(auto-fit, calc(50% - 40px));
   grid-template-rows: repeat(auto-fit, minmax(211px, 1fr));
   gap: 40px;
   margin: 0;
@@ -2791,7 +2793,7 @@ button,
 }
 @media (max-device-width: 1199px) {
   .promotions__item-wrapper {
-    width: calc(100% - 399px);
+    max-width: 279px;
   }
 }
 @media (max-device-width: 767px) {
@@ -2809,21 +2811,14 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 560px;
   min-height: 211px;
-  height: 50%;
   padding: 24px 28px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 7px solid transparent;
   -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
-}
-.promotions__item--small {
-  -ms-grid-row-align: start;
-      align-self: start;
-  -ms-grid-column: 2;
-  grid-column: 2;
 }
 @media (max-device-width: 1199px) {
   .promotions__item {
@@ -2862,8 +2857,8 @@ button,
   -ms-grid-row-span: 2;
   grid-row: span 2;
   padding: 42px 45px;
-  width: 50%;
-  min-width: 560px;
+  width: 100%;
+  max-width: 560px;
   min-height: 462px;
   background-color: #ed0233;
   background-image: -webkit-image-set(url("./../img/promo/promo.webp") type("image/webp"), url("./../img/promo/promo.jpg") type("image/jpeg"));
@@ -2887,6 +2882,7 @@ button,
   .promotions__item--big {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    max-width: 768px;
     min-height: 462px;
     background-image: -webkit-image-set(url("./../img/promo/promo_tablet.webp") type("image/webp"), url("./../img/promo/promo_tablet.jpg") type("image/jpeg"));
     background-image: image-set(url("./../img/promo/promo_tablet.webp") type("image/webp"), url("./../img/promo/promo_tablet.jpg") type("image/jpeg"));
