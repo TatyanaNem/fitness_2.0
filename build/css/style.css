@@ -2746,10 +2746,8 @@ button,
 .promotions__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 560px);
+  grid-template-rows: repeat(auto-fit, minmax(211px, 1fr));
   gap: 40px;
   margin: 0;
   padding: 0;
@@ -2813,12 +2811,19 @@ button,
           flex-direction: column;
   width: 100%;
   min-height: 211px;
+  height: 50%;
   padding: 24px 28px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 7px solid transparent;
   -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
+}
+.promotions__item--small {
+  -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 @media (max-device-width: 1199px) {
   .promotions__item {
@@ -2854,9 +2859,11 @@ button,
   }
 }
 .promotions__item--big {
-  grid-row: 1/-1;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
   padding: 42px 45px;
-  width: 100%;
+  width: 50%;
+  min-width: 560px;
   min-height: 462px;
   background-color: #ed0233;
   background-image: -webkit-image-set(url("./../img/promo/promo.webp") type("image/webp"), url("./../img/promo/promo.jpg") type("image/jpeg"));
