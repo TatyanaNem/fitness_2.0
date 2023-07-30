@@ -157,7 +157,7 @@
     & .features__center-item-content {
       padding: 51px 34px 59px;
       width: 100%;
-      background-color: #1C3374;
+      background-color: #1c3374;
     }
 
     &::before,
@@ -169,7 +169,7 @@
       width: 340px;
       height: 2px;
 
-      background-color: rgba(209, 10, 66, 0.20);
+      background-color: rgba(209, 10, 66, 0.2);
       transform: translate(-50%, -50%);
 
       @include vp-1199 {

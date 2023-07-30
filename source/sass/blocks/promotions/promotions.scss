@@ -240,6 +240,11 @@
     &:active {
       opacity: 1;
       outline-color: transparent;
+      border: none;
+
+      &::after {
+        display: block;
+      }
     }
 
     @include vp-767 {
