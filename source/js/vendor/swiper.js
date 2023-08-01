@@ -2,8 +2,6 @@
 new Swiper(".swiper-coaches", {
   direction: "horizontal",
   loop: true,
-  mousewheel: true,
-  allowPageScroll: "vertical",
   keyboard: {
         enabled: true,
     },

@@ -1,11 +1,26 @@
 .coach {
   position: relative;
+  display: grid;
   width: 260px;
   max-width: 260px;
   height: 294px;
   color: $color-default-light;
   background-color: #afafaf;
+  overflow: hidden;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &::after {
+    content: attr(data-coach);
+    position: relative;
+    margin-top: -50px;
+    font-family: $ff-secondary;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color-default-light;
+    text-align: center;
+  }
 
   @include vp-1199 {
     width: 268px;
@@ -18,7 +33,7 @@
     height: 274px;
   }
 
-  & .is-active ~ .coach-info {
+  & .is-active~.coach-info {
     opacity: 0.89;
   }
 
@@ -27,53 +42,24 @@
   }
 
   & img {
+    position: absolute;
+    top: 0;
+    grid-column: 1/-1;
+    grid-row: 1;
     text-align: center;
-    vertical-align: auto;
     width: 100%;
-    height: 100%;
+    height: 294px;
     max-height: 100%;
     object-fit: cover;
   }
 
-  & h3 {
-    position: absolute;
-    width: 100%;
-    bottom: 22px;
-    left: 50%;
-    font-family: $ff-secondary;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 700;
-    transform: translateX(-50%);
-    margin-bottom: auto;
-    text-align: center;
-    z-index: 20;
-
-    @include vp-1199 {
-      padding-right: 10px;
-    }
-
-    @include vp-767 {
-      padding-right: 0;
-    }
-  }
-
-  &:hover h3,
-  &:focus h3 {
-    top: 33px;
-    transition: 0.5s all ease-in-out;
-
-    @include vp-767 {
-      margin-bottom: 0;
-      top: 22px;
-    }
-  }
-
   &__info {
+    position: relative;
+    top: 0;
+    grid-column: 1;
+    grid-row: 1;
     padding: 20px;
-    padding-top: 58px;
-    position: absolute;
-    display: block;
+    padding-top: 56px;
     width: 100%;
     min-height: 294px;
     bottom: 0;
@@ -84,14 +70,26 @@
     background-color: $color-default-dark;
     opacity: 0;
     text-align: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 20;
 
     @include vp-767 {
       padding-top: 48px;
       min-height: 274px;
     }
 
-    & p {
-      margin-bottom: 34px;
+    & h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-family: $ff-secondary;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 1px;
+      opacity: 1;
+      color: $color-default-light;
+      text-align: center;
 
       @include vp-1199 {
         padding-right: 6px;
@@ -103,15 +101,30 @@
     }
   }
 
+  & p {
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-family: $ff-secondary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #b6bdcc;
+
+    @include vp-1199 {
+      padding-right: 6px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+    }
+  }
+
   &:hover .coach__info,
   &:focus .coach__info {
-    height: auto;
     opacity: 0.89;
     top: 0;
     overflow-y: auto;
-    transition: all 0.8s ease-in-out;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    transition: all 0.3s ease-in-out;
 
     &::-webkit-scrollbar {
       appearance: none;
@@ -119,10 +132,7 @@
 
     &::-webkit-scrollbar:vertical {
       width: 10px;
-    }
-
-    &::-webkit-scrollbar:horizontal {
-      height: 10px;
+      height: 100%;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -136,8 +146,13 @@
     }
   }
 
+  &:hover::after,
+  &:focus::after {
+    opacity: 0;
+  }
+
   &__features-list {
-    padding-left: 50px;
+    padding-left: 52px;
     list-style-type: disc;
     text-align: start;
     font-family: $ff-secondary;
