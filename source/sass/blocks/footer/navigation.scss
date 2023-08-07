@@ -34,7 +34,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 21px;
+      margin-bottom: 19px;
 
       &:first-child {
         margin-bottom: 17px;
@@ -50,10 +50,15 @@
     font-family: $ff-secondary;
     font-weight: 400;
     line-height: 16px;
+    border: 1px solid transparent;
     color: $color-default-light;
 
     &:hover {
       border-bottom: 1px solid $color-default-light;
+    }
+
+    &:active {
+      border-color: transparent;
     }
 
     @include vp-767 {

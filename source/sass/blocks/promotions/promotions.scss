@@ -228,7 +228,7 @@
       opacity: 0.8;
     }
 
-    &:focus {
+    &:focus-visible {
       outline: 1px solid $color-default-dark;
       outline-offset: 8px;
 
@@ -239,7 +239,7 @@
 
     &:active {
       opacity: 1;
-      outline-color: transparent;
+      outline: none;
       border: none;
 
       &::after {
@@ -257,11 +257,6 @@
       color: inherit;
       letter-spacing: 0.7px;
 
-      &:focus {
-        outline: 1px solid $color-default-light;
-        outline-offset: 8px;
-      }
-
       &::after {
         content: "";
         position: absolute;
@@ -270,6 +265,21 @@
         bottom: 4px;
         left: 0;
         background-color: $color-default-light;
+      }
+
+      &:active {
+        opacity: 1;
+        outline: none;
+        border: none;
+
+        &::after {
+          display: block;
+        }
+      }
+
+      &:focus-visible {
+        outline: 1px solid $color-default-light;
+        outline-offset: 8px;
       }
     }
   }

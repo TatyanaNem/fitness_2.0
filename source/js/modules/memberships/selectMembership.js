@@ -1,5 +1,5 @@
 function selectMembership() {
-  const membershipsElements = document.querySelectorAll('.membership');
+  const membershipsElements = document.querySelectorAll('.membership__link');
 
   membershipsElements.forEach((item) =>
     item.addEventListener('click', function () {

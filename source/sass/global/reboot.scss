@@ -37,10 +37,13 @@ body {
 
 a {
   color: $color-default-dark;
-  outline-color: $color-default-light;
-  outline-offset: 8px;
   text-decoration: none;
   user-select: none;
+
+  &:focus-visible {
+    outline: 1px solid $color-default-light;
+    outline-offset: 8px;
+  }
 }
 
 img,
@@ -87,6 +90,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;

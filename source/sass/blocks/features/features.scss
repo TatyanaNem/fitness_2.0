@@ -106,11 +106,11 @@
       padding: 0 46px 20px;
       text-align: center;
 
-      &:nth-child(1) {
+      &:nth-child(2) {
         order: 1;
       }
 
-      &:nth-child(2) {
+      &:nth-child(1) {
         order: 2;
       }
 
@@ -119,15 +119,15 @@
       }
 
       &:nth-child(4) {
-        order: 5;
+        order: 4;
       }
 
-      &:nth-child(5) {
-        order: 5;
+      &:nth-child(n + 5) {
+        order: 6;
       }
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       padding-left: 23px;
       grid-column: 1;
 
@@ -198,10 +198,10 @@
     }
 
     @include vp-767 {
-      order: 4;
       width: 100%;
       max-width: 100%;
       margin: 20px auto 44px;
+      order: 3;
 
       & .features__center-item-content {
         width: 100%;
